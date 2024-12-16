@@ -3,10 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+first_name: Tiago
+middle_name: H. V.
+last_name: de Lima
+keywords: physics, nanomaterials, computational-physics, condensed-matter # add your own keywords or leave empty
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://tiagolima.me # the base hostname & protocol for your site
