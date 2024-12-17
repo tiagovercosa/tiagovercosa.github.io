@@ -180,6 +180,14 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - _pages/en-us/dropdown.md
+  - _pages/pt-br/dropdown.md
+  - _pages/en-us/news.md
+  - _pages/pt-br/news.md
+  - _pages/en-us/profiles.md
+  - _pages/pt-br/profiles.md
+  - _pages/en-us/projects.md
+  - _pages/pt-br/projects.md
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
