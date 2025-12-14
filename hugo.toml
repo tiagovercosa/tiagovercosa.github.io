@@ -1,4 +1,29 @@
 theme = "PaperMod"
+languageCode = 'pt-br'
 baseURL = 'https://tiagolima.me/'
-languageCode = 'en-us'
 title = 'Tiago Lima'
+
+[params]
+	defaultTheme = "auto"
+	ShowReadingTime = true
+	ShowShareButtons = true
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/tiagovercosa"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:contato@tiagolima.me"
+
+[[menu.main]]
+	identifier = "posts"
+	name = "Blog"
+	url = "/posts/"
+	weight = 10
+
+[[menu.main]]
+	identifier = "about"
+	name = "Sobre Mim"
+	url = "/about/"
+	weight = 20
+
