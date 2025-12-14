@@ -21,7 +21,7 @@ concurrency:
 
 # Configuração padrão do Hugo
 env:
-  HUGO_VERSION: 0.152.8 # Versão recente
+  HUGO_VERSION: 0.152.2 # Versão recente
 
 jobs:
   # Tarefa de Construção (Build)
