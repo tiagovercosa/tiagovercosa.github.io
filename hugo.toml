@@ -1,0 +1,4 @@
+theme = "PaperMod"
+baseURL = 'https://tiagolima.me/'
+languageCode = 'en-us'
+title = 'Tiago Lima'
