@@ -1,29 +1,72 @@
-theme = "PaperMod"
-languageCode = 'pt-br'
 baseURL = 'https://tiagolima.me/'
 title = 'Tiago Lima'
+theme = 'PaperMod'
+defaultContentLanguage = 'pt-br' # Idioma padrão
 
+# Configurações Globais
 [params]
-	defaultTheme = "auto"
-	ShowReadingTime = true
-	ShowShareButtons = true
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowCodeCopyButtons = true
 
-  [[params.socialIcons]]
+# --- Configuração: PORTUGUÊS (Padrão) ---
+[languages.pt-br]
+  languageName = "🇧🇷 Português"
+  weight = 1
+  title = "Tiago Lima"
+  
+  [languages.pt-br.params.profileMode]
+    enabled = true
+    title = "Tiago Lima"
+    subtitle = "Doutorando em Física na UnB | Desenvolvedor"
+    imageUrl = "https://github.com/tiagovercosa.png"
+    imageWidth = 120
+    imageHeight = 120
+
+  [[languages.pt-br.params.socialIcons]]
     name = "github"
     url = "https://github.com/tiagovercosa"
-  [[params.socialIcons]]
+  [[languages.pt-br.params.socialIcons]]
     name = "email"
     url = "mailto:contato@tiagolima.me"
 
-[[menu.main]]
-	identifier = "posts"
-	name = "Blog"
-	url = "/posts/"
-	weight = 10
+  [[languages.pt-br.menu.main]]
+    name = "Blog"
+    url = "posts/"
+    weight = 10
+  [[languages.pt-br.menu.main]]
+    name = "Sobre"
+    url = "about/"
+    weight = 20
 
-[[menu.main]]
-	identifier = "about"
-	name = "Sobre Mim"
-	url = "/about/"
-	weight = 20
+# --- Configuração: INGLÊS (Secundário) ---
+[languages.en]
+  languageName = "🇺🇸 English"
+  weight = 2
+  title = "Tiago Lima"
+
+  [languages.en.params.profileMode]
+    enabled = true
+    title = "Tiago Lima"
+    subtitle = "PhD Student in Physics at UnB | Software Developer"
+    imageUrl = "https://github.com/tiagovercosa.png"
+    imageWidth = 120
+    imageHeight = 120
+
+  [[languages.en.params.socialIcons]]
+    name = "github"
+    url = "https://github.com/tiagovercosa"
+  [[languages.en.params.socialIcons]]
+    name = "email"
+    url = "mailto:contato@tiagolima.me"
+
+  [[languages.en.menu.main]]
+    name = "Blog"
+    url = "posts/"
+    weight = 10
+  [[languages.en.menu.main]]
+    name = "About"
+    url = "about/"
+    weight = 20
 
