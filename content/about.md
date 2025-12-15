@@ -3,7 +3,7 @@ title = "Sobre Mim"
 date = 2025-12-14
 draft = false
 hidemeta = true
-translationKey = "about"
+searchHidden = true
 +++
 
 Olá! Meu nome é Tiago.

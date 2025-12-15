@@ -11,6 +11,14 @@ defaultContentLanguage = 'pt-br'
   ShowLanguageSwitcher = true
   displayFullLangName = true
   profileMode = { enabled = false }
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 2
+    keys = ["title", "permalink", "summary", "content"]
 
 # --- Configuração: PORTUGUÊS (Padrão) ---
 [languages.pt-br]
@@ -38,6 +46,10 @@ defaultContentLanguage = 'pt-br'
   [[languages.pt-br.menu.main]]
     name = "Blog"
     url = "posts/"
+    weight = 10
+  [[languages.pt-br.menu.main]]
+    name = "Pesquisa"
+    url = "search/"
     weight = 10
   [[languages.pt-br.menu.main]]
     name = "Sobre"
@@ -72,6 +84,13 @@ defaultContentLanguage = 'pt-br'
     url = "posts/"
     weight = 10
   [[languages.en.menu.main]]
+    name = "Search"
+    url = "search/"
+    weight = 10
+  [[languages.en.menu.main]]
     name = "About"
     url = "about/"
     weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
