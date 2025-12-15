@@ -18,6 +18,7 @@ defaultContentLanguage = 'pt-br'
   ShowBreadCrumbs = true
   ShowToc = true
   ShowPostNavLinks = true
+  externalLinkNewTab = true
   [params.fuseOpts]
     isCaseSensitive = false
     shouldSort = true
@@ -72,6 +73,10 @@ defaultContentLanguage = 'pt-br'
     name = "Sobre"
     url = "about/"
     weight = 30
+  [[languages.pt-br.menu.main]]
+    name = "Lattes"
+    url = "http://lattes.cnpq.br/2589002626770110"
+    weight = 40
 
 # --- Configuração: INGLÊS (Secundário) ---
 [languages.en]
@@ -116,6 +121,10 @@ defaultContentLanguage = 'pt-br'
     name = "About"
     url = "about/"
     weight = 30
+  [[languages.en.menu.main]]
+    name = "Lattes"
+    url = "http://lattes.cnpq.br/2589002626770110"
+    weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
