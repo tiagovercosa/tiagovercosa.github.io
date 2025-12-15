@@ -12,17 +12,13 @@ defaultContentLanguage = 'pt-br'
 
 # --- Configuração: PORTUGUÊS (Padrão) ---
 [languages.pt-br]
-  languageName = "🇧🇷 Português"
+  languageName = "🇧🇷 PT"
   weight = 1
   title = "Tiago Lima"
   
   [languages.pt-br.params.profileMode]
     enabled = false
-    # title = "Tiago Lima"
-    # subtitle = "Doutorando em Física na UnB | Desenvolvedor"
-    # imageUrl = "https://github.com/tiagovercosa.png"
-    # imageWidth = 120
-    # imageHeight = 120
+
   [languages.pt-br.params.homeInfoParams]
     title = "Tiago Lima"
     Content = "Bem-vindo ao meu blog. Aqui falo sobre Física e Desenvolvimento e qualquer coisa que vier na cabeça."
@@ -30,6 +26,9 @@ defaultContentLanguage = 'pt-br'
   [[languages.pt-br.params.socialIcons]]
     name = "mastodon"
     url = "https://mastodon.social/@vercosa"
+  [[languages.pt-br.params.socialIcons]]
+    name = "bluesky"
+    url = "https://bsky.app/profile/tiagolima.me"
   [[languages.pt-br.params.socialIcons]]
     name = "github"
     url = "https://github.com/tiagovercosa"
@@ -48,17 +47,12 @@ defaultContentLanguage = 'pt-br'
 
 # --- Configuração: INGLÊS (Secundário) ---
 [languages.en]
-  languageName = "🇺🇸 English"
+  languageName = "🇺🇸 EN"
   weight = 2
   title = "Tiago Lima"
 
   [languages.en.params.profileMode]
     enabled = false
-    # title = "Tiago Lima"
-    # subtitle = "PhD Student in Physics at UnB | Software Developer"
-    # imageUrl = "https://github.com/tiagovercosa.png"
-    # imageWidth = 120
-    # imageHeight = 120
 
   [languages.en.params.homeInfoParams]
     title = "Tiago Lima"
@@ -67,6 +61,9 @@ defaultContentLanguage = 'pt-br'
   [[languages.en.params.socialIcons]]
     name = "mastodon"
     url = "https://mastodon.social/@vercosa"
+  [[languages.en.params.socialIcons]]
+    name = "bluesky"
+    url = "https://bsky.app/profile/tiagolima.me"
   [[languages.en.params.socialIcons]]
     name = "github"
     url = "https://github.com/tiagovercosa"
