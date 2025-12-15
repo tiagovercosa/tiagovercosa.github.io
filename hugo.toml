@@ -48,6 +48,10 @@ defaultContentLanguage = 'pt-br'
     url = "posts/"
     weight = 10
   [[languages.pt-br.menu.main]]
+    name = "Arquivo"
+    url = "archives/"
+    weight = 15
+  [[languages.pt-br.menu.main]]
     name = "Pesquisa"
     url = "search/"
     weight = 10
@@ -83,6 +87,10 @@ defaultContentLanguage = 'pt-br'
     name = "Blog"
     url = "posts/"
     weight = 10
+  [[languages.en.menu.main]]
+    name = "Archives"
+    url = "archives/"
+    weight = 15
   [[languages.en.menu.main]]
     name = "Search"
     url = "search/"
