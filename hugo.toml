@@ -3,6 +3,10 @@ title = 'Tiago Lima'
 theme = 'PaperMod'
 defaultContentLanguage = 'pt-br'
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
 # Configurações Globais
 [params]
   defaultTheme = "auto"
@@ -11,6 +15,9 @@ defaultContentLanguage = 'pt-br'
   ShowLanguageSwitcher = true
   displayFullLangName = true
   profileMode = { enabled = false }
+  ShowBreadCrumbs = true
+  ShowToc = true
+  ShowPostNavLinks = true
   [params.fuseOpts]
     isCaseSensitive = false
     shouldSort = true
@@ -19,6 +26,8 @@ defaultContentLanguage = 'pt-br'
     threshold = 0.4
     minMatchCharLength = 2
     keys = ["title", "permalink", "summary", "content"]
+  [params.math]
+    enable = true
 
 # --- Configuração: PORTUGUÊS (Padrão) ---
 [languages.pt-br]
@@ -54,11 +63,15 @@ defaultContentLanguage = 'pt-br'
   [[languages.pt-br.menu.main]]
     name = "Pesquisa"
     url = "search/"
-    weight = 10
+    weight = 20
+  [[languages.pt-br.menu.main]]
+    name = "Tags"
+    url = "tags/"
+    weight = 25
   [[languages.pt-br.menu.main]]
     name = "Sobre"
     url = "about/"
-    weight = 20
+    weight = 30
 
 # --- Configuração: INGLÊS (Secundário) ---
 [languages.en]
@@ -94,11 +107,15 @@ defaultContentLanguage = 'pt-br'
   [[languages.en.menu.main]]
     name = "Search"
     url = "search/"
-    weight = 10
+    weight = 20
+  [[languages.en.menu.main]]
+    name = "Tags"
+    url = "tags/"
+    weight = 25
   [[languages.en.menu.main]]
     name = "About"
     url = "about/"
-    weight = 20
+    weight = 30
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
