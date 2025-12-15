@@ -21,7 +21,7 @@ defaultContentLanguage = 'pt-br'
 
   [languages.pt-br.params.homeInfoParams]
     title = "Tiago Lima"
-    Content = "Bem-vindo ao meu blog. Aqui falo sobre Física e Desenvolvimento e qualquer coisa que vier na cabeça."
+    Content = "Bem-vindo ao meu blog. Aqui falo sobre Física, Matemática, leituras, desenvolvimento de software e qualquer outra coisa que me venha à mente."
 
   [[languages.pt-br.params.socialIcons]]
     name = "mastodon"
@@ -53,7 +53,7 @@ defaultContentLanguage = 'pt-br'
 
   [languages.en.params.homeInfoParams]
     title = "Tiago Lima"
-    Content = "Welcome to my blog. Here I talk about Physics and Development and anything else that comes to mind."
+    Content = "Welcome to my blog. Here I talk about Physics, Mathematics, readings, software development and anything else that comes to mind."
 
   [[languages.en.params.socialIcons]]
     name = "mastodon"
