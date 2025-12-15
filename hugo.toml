@@ -1,7 +1,7 @@
 baseURL = 'https://tiagolima.me/'
 title = 'Tiago Lima'
 theme = 'PaperMod'
-defaultContentLanguage = 'pt-br' # Idioma padrão
+defaultContentLanguage = 'pt-br'
 
 # Configurações Globais
 [params]
@@ -20,7 +20,7 @@ defaultContentLanguage = 'pt-br' # Idioma padrão
     enabled = true
     title = "Tiago Lima"
     subtitle = "Doutorando em Física na UnB | Desenvolvedor"
-    imageUrl = "https://github.com/tiagovercosa.png"
+    # imageUrl = "https://github.com/tiagovercosa.png"
     imageWidth = 120
     imageHeight = 120
 
@@ -50,7 +50,7 @@ defaultContentLanguage = 'pt-br' # Idioma padrão
     enabled = true
     title = "Tiago Lima"
     subtitle = "PhD Student in Physics at UnB | Software Developer"
-    imageUrl = "https://github.com/tiagovercosa.png"
+    # imageUrl = "https://github.com/tiagovercosa.png"
     imageWidth = 120
     imageHeight = 120
 
