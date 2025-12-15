@@ -7,7 +7,6 @@ defaultContentLanguage = 'pt-br'
 [params]
   defaultTheme = "auto"
   ShowReadingTime = true
-  ShowShareButtons = true
   ShowCodeCopyButtons = true
   ShowLanguageSwitcher = true
   displayFullLangName = true
