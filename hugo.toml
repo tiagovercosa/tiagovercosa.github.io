@@ -25,6 +25,9 @@ defaultContentLanguage = 'pt-br'
     imageHeight = 120
 
   [[languages.pt-br.params.socialIcons]]
+    name = "mastodon"
+    url = "https://mastodon.social/@vercosa"
+  [[languages.pt-br.params.socialIcons]]
     name = "github"
     url = "https://github.com/tiagovercosa"
   [[languages.pt-br.params.socialIcons]]
@@ -54,6 +57,9 @@ defaultContentLanguage = 'pt-br'
     imageWidth = 120
     imageHeight = 120
 
+  [[languages.en.params.socialIcons]]
+    name = "mastodon"
+    url = "https://mastodon.social/@vercosa"
   [[languages.en.params.socialIcons]]
     name = "github"
     url = "https://github.com/tiagovercosa"
