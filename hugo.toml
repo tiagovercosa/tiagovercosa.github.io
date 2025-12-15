@@ -9,15 +9,15 @@ defaultContentLanguage = 'pt-br'
   ShowReadingTime = true
   ShowShareButtons = true
   ShowCodeCopyButtons = true
+  ShowLanguageSwitcher = true
+  displayFullLangName = true
+  profileMode = { enabled = false }
 
 # --- Configuração: PORTUGUÊS (Padrão) ---
 [languages.pt-br]
   languageName = "🇧🇷 PT"
   weight = 1
   title = "Tiago Lima"
-  
-  [languages.pt-br.params.profileMode]
-    enabled = false
 
   [languages.pt-br.params.homeInfoParams]
     title = "Tiago Lima"
@@ -50,9 +50,6 @@ defaultContentLanguage = 'pt-br'
   languageName = "🇺🇸 EN"
   weight = 2
   title = "Tiago Lima"
-
-  [languages.en.params.profileMode]
-    enabled = false
 
   [languages.en.params.homeInfoParams]
     title = "Tiago Lima"
