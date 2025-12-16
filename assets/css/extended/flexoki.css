@@ -3,6 +3,7 @@
     /* --- Flexoki Light Palette --- */
     --flexoki-light-bg: #FFFCF0;       /* Paper */
     --flexoki-light-bg-2: #F2F0E5;     /* Base 50 */
+    --flexoki-light-bg-code: #1C1B1A;
     --flexoki-light-ui: #E6E4D9;       /* Base 100 */
     --flexoki-light-ui-2: #DAD8CE;     /* Base 150 */
     --flexoki-light-tx: #100F0F;       /* Black */
@@ -17,7 +18,7 @@
     --secondary: var(--flexoki-light-tx-2);
     --tertiary: var(--flexoki-light-ui); /* Bordas e elementos inativos */
     --content: var(--flexoki-light-tx);
-    --code-block-bg: var(--flexoki-light-bg-2);
+    --code-block-bg: var(--flexoki-light-bg-code);
     --code-bg: var(--flexoki-light-bg-2);
     --border: var(--flexoki-light-ui);
 }
@@ -72,18 +73,12 @@ a:hover, a:focus {
     border-radius: var(--radius);
 }
 
-/* --- Syntax Highlighting (Chroma) Overrides --- */
-/* Força o background dos blocos de código para a cor do tema Flexoki */
-.post-content .highlight,
-.post-content pre {
-    background-color: var(--code-block-bg) !important;
-}
-
+/* Código em destaque com fundo transparente */
 .post-content .highlight pre {
     background-color: transparent !important;
 }
 
-/* Cores de sintaxe básicas (simplificado para funcionar globalmente) */
+/* Cores de sintaxe básicas */
 /* Light Mode Syntax */
 @media (prefers-color-scheme: light) {
     :root:not([data-theme="dark"]) .chroma .k, 
