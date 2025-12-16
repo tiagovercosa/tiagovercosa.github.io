@@ -19,6 +19,7 @@ defaultContentLanguage = 'pt-br'
   ShowToc = true
   ShowPostNavLinks = true
   externalLinkNewTab = true
+  customCSS = ["css/extended/flexoki.css"]
   [params.fuseOpts]
     isCaseSensitive = false
     shouldSort = true

@@ -1,0 +1,129 @@
+/* Flexoki Theme for Hugo PaperMod */
+:root {
+    /* --- Flexoki Light Palette --- */
+    --flexoki-light-bg: #FFFCF0;       /* Paper */
+    --flexoki-light-bg-2: #F2F0E5;     /* Base 50 */
+    --flexoki-light-ui: #E6E4D9;       /* Base 100 */
+    --flexoki-light-ui-2: #DAD8CE;     /* Base 150 */
+    --flexoki-light-tx: #100F0F;       /* Black */
+    --flexoki-light-tx-2: #6F6E69;     /* Base 600 */
+    --flexoki-light-tx-3: #B7B5AC;     /* Base 300 */
+    --flexoki-light-cyan: #24837B;
+    
+    /* --- PaperMod Variables Override (Light) --- */
+    --theme: var(--flexoki-light-bg);
+    --entry: var(--flexoki-light-bg);
+    --primary: var(--flexoki-light-tx);
+    --secondary: var(--flexoki-light-tx-2);
+    --tertiary: var(--flexoki-light-ui); /* Bordas e elementos inativos */
+    --content: var(--flexoki-light-tx);
+    --code-block-bg: var(--flexoki-light-bg-2);
+    --code-bg: var(--flexoki-light-bg-2);
+    --border: var(--flexoki-light-ui);
+}
+
+:root[data-theme="dark"] {
+    /* --- Flexoki Dark Palette --- */
+    --flexoki-dark-bg: #100F0F;        /* Black */
+    --flexoki-dark-bg-2: #1C1B1A;      /* Base 950 */
+    --flexoki-dark-ui: #282726;        /* Base 900 */
+    --flexoki-dark-ui-2: #343331;      /* Base 850 */
+    --flexoki-dark-tx: #CECDC3;        /* Base 200 */
+    --flexoki-dark-tx-2: #878580;      /* Base 500 */
+    --flexoki-dark-tx-3: #575653;      /* Base 700 */
+
+    /* --- PaperMod Variables Override (Dark) --- */
+    --theme: var(--flexoki-dark-bg);
+    --entry: var(--flexoki-dark-bg-2); /* Cartões um pouco mais claros que o fundo */
+    --primary: var(--flexoki-dark-tx);
+    --secondary: var(--flexoki-dark-tx-2);
+    --tertiary: var(--flexoki-dark-ui);
+    --content: var(--flexoki-dark-tx);
+    --code-block-bg: var(--flexoki-dark-bg-2);
+    --code-bg: var(--flexoki-dark-ui);
+    --border: var(--flexoki-dark-ui);
+}
+
+/* --- Ajustes Específicos do Flexoki --- */
+
+/* Links e Destaques */
+a {
+    color: var(--primary);
+}
+
+a:hover, a:focus {
+  color: var(--flexoki-light-cyan);
+}
+
+/* Ajuste da cor de seleção */
+::selection {
+    background: rgba(36, 131, 123, 0.2); 
+    color: inherit;
+}
+
+::-moz-selection {
+    background: rgba(36, 131, 123, 0.2);
+    color: inherit;
+}
+
+/* Scrollbar para combinar com o tema */
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    border-radius: var(--radius);
+}
+
+/* --- Syntax Highlighting (Chroma) Overrides --- */
+/* Força o background dos blocos de código para a cor do tema Flexoki */
+.post-content .highlight,
+.post-content pre {
+    background-color: var(--code-block-bg) !important;
+}
+
+.post-content .highlight pre {
+    background-color: transparent !important;
+}
+
+/* Cores de sintaxe básicas (simplificado para funcionar globalmente) */
+/* Light Mode Syntax */
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) .chroma .k, 
+    :root:not([data-theme="dark"]) .chroma .kd, 
+    :root:not([data-theme="dark"]) .chroma .kp, 
+    :root:not([data-theme="dark"]) .chroma .kr { color: #A02F6F; } /* Magenta (Keywords) */
+    
+    :root:not([data-theme="dark"]) .chroma .s, 
+    :root:not([data-theme="dark"]) .chroma .s1, 
+    :root:not([data-theme="dark"]) .chroma .s2 { color: #24837B; } /* Cyan (Strings) */
+    
+    :root:not([data-theme="dark"]) .chroma .c, 
+    :root:not([data-theme="dark"]) .chroma .ch, 
+    :root:not([data-theme="dark"]) .chroma .cm, 
+    :root:not([data-theme="dark"]) .chroma .c1 { color: #B7B5AC; } /* Base 300 (Comments) */
+    
+    :root:not([data-theme="dark"]) .chroma .nf { color: #205EA6; } /* Blue (Functions) */
+    :root:not([data-theme="dark"]) .chroma .nv { color: #BC5215; } /* Orange (Variables) */
+    :root:not([data-theme="dark"]) .chroma .m, 
+    :root:not([data-theme="dark"]) .chroma .mb, 
+    :root:not([data-theme="dark"]) .chroma .mi { color: #5E409D; } /* Purple (Numbers) */
+}
+
+/* Dark Mode Syntax */
+:root[data-theme="dark"] .chroma .k, 
+:root[data-theme="dark"] .chroma .kd, 
+:root[data-theme="dark"] .chroma .kp, 
+:root[data-theme="dark"] .chroma .kr { color: #CE5D97; } /* Magenta (Keywords) */
+
+:root[data-theme="dark"] .chroma .s, 
+:root[data-theme="dark"] .chroma .s1, 
+:root[data-theme="dark"] .chroma .s2 { color: #3AA99F; } /* Cyan (Strings) */
+
+:root[data-theme="dark"] .chroma .c, 
+:root[data-theme="dark"] .chroma .ch, 
+:root[data-theme="dark"] .chroma .cm, 
+:root[data-theme="dark"] .chroma .c1 { color: #575653; } /* Base 700 (Comments) */
+
+:root[data-theme="dark"] .chroma .nf { color: #4385BE; } /* Blue (Functions) */
+:root[data-theme="dark"] .chroma .nv { color: #DA702C; } /* Orange (Variables) */
+:root[data-theme="dark"] .chroma .m, 
+:root[data-theme="dark"] .chroma .mb, 
+:root[data-theme="dark"] .chroma .mi { color: #8B7EC8; } /* Purple (Numbers) */
