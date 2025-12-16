@@ -39,7 +39,10 @@ defaultContentLanguage = 'pt-br'
 
   [languages.pt-br.params.homeInfoParams]
     title = "Tiago Lima"
-    Content = "Bem-vindo ao meu blog. Aqui falo sobre Física, Matemática, leituras, desenvolvimento de software e qualquer outra coisa que me venha à mente."
+    Content = '''
+Bem-vindo ao meu blog. Aqui falo sobre Física, Matemática, leituras, programação, software livre e qualquer outra coisa que me venha à mente.
+> *Tem uma mente mesquinha quem pensa que ela repousa sobre as memórias das fórmulas.*
+'''
 
   [[languages.pt-br.params.socialIcons]]
     name = "mastodon"
@@ -87,7 +90,10 @@ defaultContentLanguage = 'pt-br'
 
   [languages.en.params.homeInfoParams]
     title = "Tiago Lima"
-    Content = "Welcome to my blog. Here I talk about Physics, Mathematics, readings, software development and anything else that comes to mind."
+    Content = '''
+Welcome to my blog. Here I talk about Physics, Mathematics, readings, programming, free software, and anything else that comes to mind.
+> *It takes a petty mind to think that it rests on the memory of formulas.*
+'''
 
   [[languages.en.params.socialIcons]]
     name = "mastodon"
