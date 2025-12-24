@@ -30,6 +30,8 @@ defaultContentLanguage = 'pt-br'
     keys = ["title", "permalink", "summary", "content"]
   [params.math]
     enable = true
+  [params.assets]
+    favicon = "/favicon.png"
 
 # --- Configuração: PORTUGUÊS (Padrão) ---
 [languages.pt-br]
