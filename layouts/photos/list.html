@@ -14,7 +14,13 @@
         {{ $img := index $imgs 0 }}
         <a href="{{ .RelPermalink }}" class="photo-item">
           <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}">
-          <span class="photo-caption">{{ .Title }}</span>
+          {{ $caption := .Title }}
+          {{ if not $caption }}
+            {{ $caption = .Description }}
+          {{ end }}
+          {{ if $caption }}
+            <span class="photo-caption">{{ $caption }}</span>
+          {{ end }}
         </a>
       {{ end }}
     {{ end }}
