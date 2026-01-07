@@ -1,0 +1,66 @@
+{{- $width := "220" -}}
+{{- with .Get "width" -}}
+{{- $width = . -}}
+{{- end -}}
+{{- $tracking_params := slice "utm_medium" "blog" "utm_campaign" "affiliate_sale" "utm_id" "affiliate_sale" -}}
+{{- $amazon_affiliate := slice "tag" "gagor-21" -}}
+
+<figure {{ if or (.Get "class") (eq (.Get "align") "center") }} class="
+           {{- if eq (.Get "align") "center" }}align-center {{ end }}
+           {{- with .Get "class" }}{{ . }}{{- end }}"
+
+{{- end -}} style="display:flex;">
+    {{- if .Get "link" -}}
+        <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+    {{- end }}
+    <img loading="lazy" src="{{ .Get "cover" }}{{- if eq (.Get "align") "center" }}#center{{- end }}"
+         {{- if or (.Get "alt") (.Get "caption") }}
+         alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+         {{- end -}}
+         {{- with $width }} width="{{ . }}"{{ end -}}
+         {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+    /> <!-- Closing img tag -->
+    {{- if .Get "link" }}</a>{{ end -}}
+    {{- if or (.Get "title") (.Get "subTitle") -}}
+        <figcaption style="margin-left: 1em; float: right;">
+            {{ with (.Get "title") -}}
+                <q>{{ . }}</q>
+            {{- end -}}
+            {{- with (.Get "subTitle" | markdownify) -}}
+                <p>{{.}}</p>
+            {{- end -}}
+            {{- with or (.Get "author") (.Get "authors") -}}
+                {{- $authors := split . "," -}}
+                {{- if gt (len $authors) 1 -}}
+                    <p>Authors: {{ delimit $authors ", " }}</p>
+                {{- else -}}
+                    <p>Author: {{.}}</p>
+                {{- end -}}
+            {{- end -}}
+            {{- $links := slice
+                (dict "url" (.Get "link1") "text" (.Get "link1_text"))
+                (dict "url" (.Get "link2") "text" (.Get "link2_text"))
+                (dict "url" (.Get "link3") "text" (.Get "link3_text"))
+                (dict "url" (.Get "link4") "text" (.Get "link4_text"))
+            -}}
+            {{- if $links -}}
+            <ul>
+            {{- range $links -}}
+                {{- if .url -}}
+                    {{- $url := urls.Parse .url -}}
+                    {{- $href := .url -}}
+
+                    {{- if hasPrefix (trim $url.Host "www.") "amazon." -}}
+                        {{- $url_params := $amazon_affiliate | append $tracking_params | append "utm_source" $url.Host -}}
+                        {{- $href = printf "%s?%s" $href ((querify $url_params) | safeURL) -}}
+                    {{- end -}}
+
+                    {{- $label := .text | default (trim $url.Host "www.") -}}
+                    <li><a href="{{ $href }}" target="_blank" rel="noopener">{{ $label }}</a></li>
+                {{- end -}}
+            {{- end -}}
+            </ul>
+            {{- end -}}
+        </figcaption>
+    {{- end }}
+</figure>

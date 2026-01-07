@@ -1,6 +1,6 @@
 baseURL = 'https://tiagolima.me/'
 title = 'Tiago Lima'
-theme = 'PaperMod'
+theme = ['PaperMod', 'PaperMod-bookshelf']
 defaultContentLanguage = 'pt-br'
 
 [taxonomies]
@@ -69,9 +69,13 @@ Bem-vindo ao meu blog. Aqui falo sobre Física, Matemática, leituras, programa�
     url = "/photos/"
     weight = 13
   [[languages.pt-br.menu.main]]
+    name = "Biblioteca"
+    url = "books/"
+    weight = 15
+  [[languages.pt-br.menu.main]]
     name = "Arquivo"
     url = "archives/"
-    weight = 15
+    weight = 17
   [[languages.pt-br.menu.main]]
     name = "Pesquisa"
     url = "search/"
@@ -124,9 +128,13 @@ Welcome to my blog. Here I talk about Physics, Mathematics, readings, programmin
     url = "/photos/"
     weight = 13
   [[languages.en.menu.main]]
+    name = "Library"
+    url = "books/"
+    weight = 15
+  [[languages.en.menu.main]]
     name = "Archives"
     url = "archives/"
-    weight = 15
+    weight = 17
   [[languages.en.menu.main]]
     name = "Search"
     url = "search/"
