@@ -15,6 +15,7 @@ defaultContentLanguage = 'pt-br'
   ShowLanguageSwitcher = true
   displayFullLangName = true
   profileMode = { enabled = false }
+  mainSections = ["posts"]
   ShowBreadCrumbs = true
   ShowToc = true
   ShowPostNavLinks = true
@@ -63,6 +64,10 @@ Bem-vindo ao meu blog. Aqui falo sobre Física, Matemática, leituras, programa�
     name = "Blog"
     url = "posts/"
     weight = 10
+  [[languages.pt-br.menu.main]]
+    name = "Fotos"
+    url = "/photos/"
+    weight = 13
   [[languages.pt-br.menu.main]]
     name = "Arquivo"
     url = "archives/"
@@ -114,6 +119,10 @@ Welcome to my blog. Here I talk about Physics, Mathematics, readings, programmin
     name = "Blog"
     url = "posts/"
     weight = 10
+  [[languages.en.menu.main]]
+    name = "Photos"
+    url = "/photos/"
+    weight = 13
   [[languages.en.menu.main]]
     name = "Archives"
     url = "archives/"
