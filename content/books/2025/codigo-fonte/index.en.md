@@ -10,6 +10,7 @@ tags:
   - memoirs
   - business
   - non-fiction
+  - technology
 book_authors:
   - Bill Gates
 book_rating: 4

@@ -13,6 +13,7 @@ tags:
   - Mathematics
   - Science
   - Technology
+  - Fiction
 book_authors:
   - Hans Magnus Enzensberger
   - Rotraut Susanne Berner

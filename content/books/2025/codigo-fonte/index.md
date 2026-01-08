@@ -10,6 +10,7 @@ tags:
   - memorias
   - negocios
   - nao-ficcao
+  - tecnologia
 book_authors:
   - Bill Gates
 book_rating: 4
