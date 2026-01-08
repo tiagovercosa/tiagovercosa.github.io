@@ -6,9 +6,10 @@ authors:
 categories:
   - Book
 tags:
-  - Biografias
-  - Memorias
-  - Negocios
+  - biografias
+  - memorias
+  - negocios
+  - nao-ficcao
 book_authors:
   - Bill Gates
 book_rating: 4

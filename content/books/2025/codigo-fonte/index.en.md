@@ -6,9 +6,10 @@ authors:
 categories:
   - Book
 tags:
-  - Biographies
-  - Memoirs
-  - Business
+  - biographies
+  - memoirs
+  - business
+  - non-fiction
 book_authors:
   - Bill Gates
 book_rating: 4
