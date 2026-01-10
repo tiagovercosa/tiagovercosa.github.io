@@ -1,0 +1,10 @@
+<div class="social-icons" {{ with .align}}align="{{.}}" {{- end }}>
+    {{- range .Site.Params.socialIcons }}
+      {{ $name := lower .name }}
+      <a href="{{ .url | safeURL }}"
+         target="_blank"
+         rel="{{ if eq $name "mastodon" }}me noopener noreferrer{{ else }}noopener noreferrer{{ end }}">
+        {{ partial "svg.html" . }}
+      </a>
+    {{- end }}
+</div>
