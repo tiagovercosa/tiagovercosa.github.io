@@ -42,23 +42,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  notify:
-    runs-on: ubuntu-latest
-    needs: deploy
-    steps:
-      # Postar no Mastodon
-      - name: Post to Mastodon
-        uses: cbrgm/mastodon-github-action@v2
-        with:
-          access-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
-          url: "https://mastodon.social"
-          message: "Confira o novo post no meu blog: https://tiagolima.me"
-
-      # Postar no Bluesky (Perfil Principal de 134 seguidores)
-      - name: Post to Bluesky
-        uses: myConsciousness/bluesky-post@v5
-        with:
-          text: "Confira o novo post no meu blog: https://tiagolima.me"
-          identifier: ${{ secrets.BLUESKY_HANDLE }}
-          password: ${{ secrets.BLUESKY_APP_PASSWORD }}
