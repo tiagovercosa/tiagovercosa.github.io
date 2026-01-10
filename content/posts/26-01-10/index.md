@@ -1,6 +1,6 @@
 ---
 author: ["Tiago Lima"]
-date: "2026-01-10T20:48:39-03:00"
+date: "2026-01-10T20:35:39-03:00"
 title: "Post de teste para o Fediverso"
 description: "Um pequeno post para testar as funcionalidades no Fediverso"
 tags: ["markdown", "teste"]
