@@ -1,0 +1,34 @@
+<div class="webmention-container">
+  <hr>
+  <h3>Interações na Web</h3>
+  <div id="webmentions-list">Carregando interações...</div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const url = window.location.href.replace(/\/$/, ""); // URL atual sem barra final
+    const api = `https://webmention.io/api/mentions.jf2?target=${url}`;
+
+    fetch(api)
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('webmentions-list');
+        if (data.children && data.children.length > 0) {
+          container.innerHTML = ""; // Limpa o carregando
+          data.children.forEach(mention => {
+            const entry = document.createElement('div');
+            entry.className = "webmention-entry";
+            entry.style.marginBottom = "1rem";
+            
+            const author = mention.author ? mention.author.name : "Anônimo";
+            const content = mention.content ? mention.content.text : mention['wm-property'].replace("-", " ");
+            
+            entry.innerHTML = `<strong>${author}</strong>: ${content}`;
+            container.appendChild(entry);
+          });
+        } else {
+          container.innerHTML = "<p>Nenhuma menção ainda. Seja o primeiro a compartilhar!</p>";
+        }
+      });
+  });
+</script>

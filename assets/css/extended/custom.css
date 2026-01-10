@@ -42,3 +42,16 @@
     font-size: 0.85rem;
     opacity: 0.75;
 }
+
+.webmention-container {
+    margin-top: 3rem;
+    font-family: var(--font-sans); /* Seguindo sua configuração atual */
+}
+
+.webmention-entry {
+    padding: 10px;
+    border-left: 3px solid var(--primary); /* Usa a cor primária do seu tema */
+    background: var(--code-bg);
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
