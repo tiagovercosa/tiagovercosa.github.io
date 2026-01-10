@@ -17,6 +17,7 @@ defaultContentLanguage = 'pt-br'
   profileMode = { enabled = false }
   mainSections = ["posts"]
   ShowBreadCrumbs = true
+  comments = true
   ShowToc = true
   ShowPostNavLinks = true
   externalLinkNewTab = true
