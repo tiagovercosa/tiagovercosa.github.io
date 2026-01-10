@@ -59,3 +59,7 @@ jobs:
       - name: Deploy no GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Webmention Ping Bridgy
+        run: |
+          curl https://brid.gy/publish/bluesky -d source=https://tiagolima.me/ -d target=https://brid.gy/publish/bluesky
+          curl https://brid.gy/publish/mastodon -d source=https://tiagolima.me/ -d target=https://brid.gy/publish/mastodon
