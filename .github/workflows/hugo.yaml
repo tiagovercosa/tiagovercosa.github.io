@@ -1,4 +1,4 @@
-name: Deploy and Notify Social Media
+name: Deploy Hugo Site to Pages
 
 on:
   push:
