@@ -1,54 +1,37 @@
-name: Deploy Hugo Site to Pages
+name: Deploy and Notify Social Media
 
 on:
-  # Roda sempre que você der push na branch main
   push:
     branches:
       - main
-  # Permite rodar manualmente na aba Actions do GitHub
   workflow_dispatch:
 
-# Permissões para o GITHUB_TOKEN implantar no GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Permite apenas um deploy simultâneo
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-# Configuração padrão do Hugo
-env:
-  HUGO_VERSION: 0.152.2 # Versão recente
-
 jobs:
-  # Tarefa de Construção (Build)
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout do código
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive # Importante para baixar o tema PaperMod!
+          submodules: recursive
           fetch-depth: 0
-
-      - name: Instalar Hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true # Versão extendida (melhor compatibilidade)
-
-      - name: Construir o site
+          hugo-version: '0.152.2'
+          extended: true
+      - name: Build
         run: hugo --minify
-
-      - name: Upload do artefato
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
-  # Tarefa de Publicação (Deploy)
   deploy:
     environment:
       name: github-pages
@@ -56,10 +39,26 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy no GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Webmention Ping Bridgy
-        run: |
-          curl https://brid.gy/publish/bluesky -d source=https://tiagolima.me/ -d target=https://brid.gy/publish/bluesky
-          curl https://brid.gy/publish/mastodon -d source=https://tiagolima.me/ -d target=https://brid.gy/publish/mastodon
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      # Postar no Mastodon
+      - name: Post to Mastodon
+        uses: cbrgm/mastodon-github-action@v2
+        with:
+          access-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          url: "https://mastodon.social"
+          message: "Confira o novo post no meu blog: https://tiagolima.me"
+
+      # Postar no Bluesky (Perfil Principal de 134 seguidores)
+      - name: Post to Bluesky
+        uses: myConsciousness/bluesky-post@v5
+        with:
+          text: "Confira o novo post no meu blog: https://tiagolima.me"
+          identifier: ${{ secrets.BLUESKY_HANDLE }}
+          password: ${{ secrets.BLUESKY_APP_PASSWORD }}
