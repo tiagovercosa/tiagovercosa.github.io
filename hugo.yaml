@@ -1,4 +1,63 @@
-baseURL: https://blog.tiagolima.me/
+baseURL: https://tiagolima.me/
 languageCode: pt-br
 title: Tiago Lima
 theme: ["PaperMod"]
+
+params:
+
+  homeInfoParams:
+    Title: "Blog do Tiago Lima"
+    # content: "Bem-vindo ao meu blog. Aqui falo sobre Física, Matemática, leituras, programação, software livre e qualquer outra coisa que me venha à mente."
+
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/tiagovercosa"
+    - name: mastodon
+      url: "https://mastodon.social/@vercosa"
+    - name: bluesky
+      url: "https://bsky.app/profile/tiagolima.me"
+    - name: microblog
+      url: "https://tiagolima.me"
+    - name: email
+      url: "mailto:contato@tiagolima.me"
+
+  conver:
+    linkFullImages: true
+
+  paginacao: 6
+  dateFormat: "02 Jan 2006"
+  enableRss: true
+
+  showReadingTime: true
+  showLastUpdated: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  # ShowShareButtons: true
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 1
+    - identifier: search
+      name: Buscar
+      url: /search/
+      weight: 2
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 3
+    - identifier: categories
+      name: Categorias
+      url: /categories/
+      weight: 4
+    - identifier: archives
+      name: Arquivo
+      url: /archives/
+      weight: 5
+    - identifier: about
+      name: Sobre
+      url: /about/
+      weight: 6
