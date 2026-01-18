@@ -18,7 +18,7 @@ params:
     - name: bluesky
       url: "https://bsky.app/profile/tiagolima.me"
     - name: microblog
-      url: "https://tiagolima.me"
+      url: "https://micro.tiagolima.me"
     - name: email
       url: "mailto:contato@tiagolima.me"
 
