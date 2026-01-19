@@ -1,5 +1,5 @@
 baseURL: https://tiagolima.me/
-languageCode: pt-br
+languageCode: pt
 title: Tiago Lima
 copyright: "2024–2026 Tiago Lima · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
 theme: ["PaperMod"]
@@ -11,9 +11,10 @@ params:
 
   homeInfoParams:
     content: 
-      "Bem-vindo ao meu blog. Aqui falo sobre Física, Matemática, leituras,
+      "**Bem-vindo ao meu blog.** Aqui falo sobre Física, Matemática, leituras,
       programação, software livre e qualquer outra coisa que me venha à mente.
-      Abaixo você encontra alguns links para me acompanhar nas redes sociais."
+      Abaixo você encontra alguns links para me acompanhar nas redes sociais.
+      Será um prazer ter você por aqui!"
 
 
   socialIcons:
