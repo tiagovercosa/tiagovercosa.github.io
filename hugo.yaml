@@ -32,6 +32,8 @@ params:
       url: "https://micro.tiagolima.me"
     - name: email
       url: "mailto:contato@tiagolima.me"
+    - name: rss
+      url: "/index.xml"
 
   defaultTheme: auto
 
