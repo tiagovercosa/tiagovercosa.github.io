@@ -3,9 +3,12 @@ languageCode: pt
 title: Tiago Lima
 copyright: "2024–2026 Tiago Lima · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
 theme: ["PaperMod"]
+
 enableEmoji: true
 enableInlineShortcodes: true
 enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
 
 params:
 
@@ -71,3 +74,9 @@ menu:
       name: Sobre
       url: /about/
       weight: 5
+
+outputs:
+  home: 
+    - HTML
+    - RSS
+    - JSON
