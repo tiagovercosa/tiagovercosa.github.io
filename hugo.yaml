@@ -1,13 +1,19 @@
 baseURL: https://tiagolima.me/
 languageCode: pt-br
 title: Tiago Lima
+copyright: "2024–2026 Tiago Lima · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
 theme: ["PaperMod"]
+enableEmoji: true
+enableInlineShortcodes: true
+enableRobotsTXT: true
 
 params:
 
   homeInfoParams:
-    Title: "Blog do Tiago Lima"
-    # content: "Bem-vindo ao meu blog. Aqui falo sobre Física, Matemática, leituras, programação, software livre e qualquer outra coisa que me venha à mente."
+    content: 
+      "Bem-vindo ao meu blog. Aqui falo sobre Física, Matemática, leituras,
+      programação, software livre e qualquer outra coisa que me venha à mente.
+      Abaixo você encontra alguns links para me acompanhar nas redes sociais."
 
 
   socialIcons:
@@ -33,7 +39,6 @@ params:
   showLastUpdated: true
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
-  # ShowShareButtons: true
 
 menu:
   main:
@@ -49,15 +54,11 @@ menu:
       name: Tags
       url: /tags/
       weight: 3
-    - identifier: categories
-      name: Categorias
-      url: /categories/
-      weight: 4
     - identifier: archives
       name: Arquivo
       url: /archives/
-      weight: 5
+      weight: 4
     - identifier: about
       name: Sobre
       url: /about/
-      weight: 6
+      weight: 5
