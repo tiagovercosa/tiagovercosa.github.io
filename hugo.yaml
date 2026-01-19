@@ -10,12 +10,16 @@ enableRobotsTXT: true
 params:
 
   homeInfoParams:
-    content: 
-      "**Bem-vindo ao meu blog.** Aqui falo sobre Física, Matemática, leituras,
-      programação, software livre e qualquer outra coisa que me venha à mente.
-      Abaixo você encontra alguns links para me acompanhar nas redes sociais.
-      Será um prazer ter você por aqui!"
+    title: Tiago Lima
+    content: |
+      **Bem-vindo ao meu blog.** Este é um espaço pensado para compartilhar
+      reflexões sobre Física e Matemática, anotações de leituras, experiências com
+      programação, software livre e tudo mais que me desperte interesse.
+      
+      ---
 
+      Logo abaixo você encontra alguns links para me acompanhar em outros espaços da web.
+      Fique à vontade. Será um prazer ter você por aqui.
 
   socialIcons:
     - name: github
@@ -28,6 +32,8 @@ params:
       url: "https://micro.tiagolima.me"
     - name: email
       url: "mailto:contato@tiagolima.me"
+
+  defaultTheme: auto
 
   conver:
     linkFullImages: true
