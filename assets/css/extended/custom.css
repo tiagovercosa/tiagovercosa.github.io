@@ -1,0 +1,44 @@
+:root {
+  --font-serif: "Libre Baskerville", Georgia, serif;
+  --font-sans: "Source Sans 3", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.post-content {
+    max-width: 680px;
+}
+
+.post-content p {
+    line-height: 1.8;
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.post-content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.post-content h3 {
+    margin-top: 2.2rem;
+    font-weight: 500;
+}
+
+.home-info p {
+    font-family: var(--font-serif);
+    font-size: 1.07rem;
+    line-height: 1.7;
+}
+
+.home-info em {
+    font-family: var(--font-serif);
+    font-style: italic;
+    opacity: 0.75;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    opacity: 0.75;
+}
