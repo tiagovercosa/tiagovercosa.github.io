@@ -19,8 +19,6 @@ params:
       reflexões sobre Física e Matemática, anotações de leituras, experiências com
       programação, software livre e tudo mais que me desperte interesse.
       
-      .
-
       Logo abaixo você encontra alguns links para me acompanhar em outros espaços da web.
       Fique à vontade. Será um prazer ter você por aqui.
 
@@ -51,6 +49,11 @@ params:
   showLastUpdated: true
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
+
+  pagination:
+    disableAliases: true
+    pagerSize: 5
+    path: page
 
 menu:
   main:
