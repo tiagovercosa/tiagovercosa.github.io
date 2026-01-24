@@ -1,6 +1,6 @@
 ---
 title: "Um terceiro post de teste"
-date: "2026-01-24T15:48:39-03:00"
+date: "2026-01-24T12:58:00-03:00"
 draft: false
 tags: ["markdown", "syntax"]
 categories: ["tech"]
