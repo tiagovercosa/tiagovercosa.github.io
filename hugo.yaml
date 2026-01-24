@@ -34,7 +34,7 @@ params:
     - name: email
       url: "mailto:contato@tiagolima.me"
     - name: rss
-      url: "/index.xml"
+      url: "/posts/index.xml"
 
   defaultTheme: auto
 
@@ -79,7 +79,18 @@ menu:
       weight: 5
 
 outputs:
-  home: 
-    - HTML
-    - RSS
-    - JSON
+  home: ["HTML", "JSON"]
+  section: ["HTML", "RSS"]
+  taxonomy: ["HTML", "RSS"]
+  term: ["HTML", "RSS"]
+
+mediaTypes:
+  application/rss+xml:
+    suffixes:
+      - xml
+
+outputFormats:
+  RSS:
+    mediatype: application/rss+xml
+    baseName: index
+    permalinkable: true
