@@ -1,77 +1,128 @@
 baseURL: https://tiagovercosa.github.io/
 languageCode: pt
-title: Tiago Lima
+title: "Tiago Lima"
 copyright: "2024–2026 Tiago Lima · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
-theme: ["hextra"]
 
-enableEmoji: true
-enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
+enableGitInfo: true
 
-params:
-  navbar:
-    displayTitle: true
+# services:
+#   googleAnalytics:
+#     ID: G-MEASUREMENT_ID
 
-  footer:
-    displaySocialIcons: true
-    displayCopyright: true
-    displayPoweredBy: true
+outputs:
+  home: [html, llms]
+  page: [html]
+  section: [html, rss]
 
-  social:
-    # - name: github
-    #   url: "https://github.com/tiagovercosa"
-    # - name: mastodon
-    #   url: "https://mastodon.social/@vercosa"
-    # - name: bluesky
-    #   url: "https://bsky.app/profile/tiagolima.me"
-    # - name: microblog
-    #   url: "https://micro.tiagolima.me"
-    # - name: email
-    #   url: "mailto:contato@tiagolima.me"
-    # - name: rss
-    #   url: "/posts/index.xml"
+module:
+  hugoVersion:
+    extended: true
+    min: "0.146.0"
 
-  defaultTheme: auto
+  imports:
+    - path: github.com/imfing/hextra
 
-  conver:
-    linkFullImages: true
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)'], ['$', '$']]
+        enable: true
 
-  dateFormat: "02 Jan 2006"
-  enableRss: true
-
-  breadcrumbs: true
-  page:
-    showReadingTime: true
-    showLastUpdated: true
-    showNavigation: true
-
-pagination:
-  disableAliases: true
-  pagerSize: 6
-  path: page
+enableInlineShortcodes: true
 
 menu:
   main:
-    - identifier: about
-      name: Sobre
-      url: /about/
+    - name: Documentação
+      pageRef: /docs
+      weight: 1
+      params:
+        type: link
+    - name: Blog
+      pageRef: /blog
+      weight: 2
+      params:
+        type: link
+    - name: Sobre
+      pageRef: /about
       weight: 3
+    - name: Pesquisa
+      weight: 4
+      params:
+        type: search
+    - name: Theme Toggle
+      params:
+        type: theme-toggle
 
-outputs:
-  home: ["HTML", "JSON"]
-  section: ["HTML", "RSS"]
-  taxonomy: ["HTML", "RSS"]
-  term: ["HTML", "RSS"]
+params:
+  externalLinkDecoration: true
 
-mediaTypes:
-  application/rss+xml:
-    suffixes:
-      - xml
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+    width: wide
 
-outputFormats:
-  RSS:
-    mediatype: application/rss+xml
-    baseName: index
-    permalinkable: true
+  theme:
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
+
+  displayUpdatedDate: false
+  dateFormat: "02 Jan 2006"
+  displayReadingTime: true
+
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      tokenize: forward
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+      # Pagination
+      pagerSize: 20
+
+    article:
+      displayPagination: true
+
+  toc:
+    displayTags: true
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
+  page:
+    width: normal
+
+  imageZoom:
+    enable: true
+
+  comments:
+    enable: false
+    type: giscus

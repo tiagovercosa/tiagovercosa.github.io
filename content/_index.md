@@ -26,3 +26,5 @@ intro:
     - title: "Vida digital"
       description: "Links e referências para acompanhar meus projetos e textos."
 ---
+
+Qualquer coisa aqui dentro.
