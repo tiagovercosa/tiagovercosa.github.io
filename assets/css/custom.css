@@ -1,0 +1,139 @@
+/* Flexoki theme adjustments for Hextra */
+:root {
+  /* --- Flexoki Light Palette --- */
+  --flexoki-light-bg: #fffcf0; /* Paper */
+  --flexoki-light-bg-2: #f2f0e5; /* Base 50 */
+  --flexoki-light-ui: #e6e4d9; /* Base 100 */
+  --flexoki-light-ui-2: #dad8ce; /* Base 150 */
+  --flexoki-light-tx: #100f0f; /* Black */
+  --flexoki-light-tx-2: #6f6e69; /* Base 600 */
+  --flexoki-light-tx-3: #b7b5ac; /* Base 300 */
+  --flexoki-light-cyan: #24837b;
+}
+
+/* PaperMod-only overrides removed: --theme, --entry, --primary, --secondary, --tertiary,
+   --content, --code-block-bg, --code-bg, --border, and .post-content .highlight pre. */
+:root[data-theme="dark"] {
+  /* --- Flexoki Dark Palette --- */
+  --flexoki-dark-bg: #100f0f; /* Black */
+  --flexoki-dark-bg-2: #1c1b1a; /* Base 950 */
+  --flexoki-dark-ui: #282726; /* Base 900 */
+  --flexoki-dark-ui-2: #343331; /* Base 850 */
+  --flexoki-dark-tx: #cecdc3; /* Base 200 */
+  --flexoki-dark-tx-2: #878580; /* Base 500 */
+  --flexoki-dark-tx-3: #575653; /* Base 700 */
+}
+
+body {
+  background-color: var(--flexoki-light-bg);
+  color: var(--flexoki-light-tx);
+}
+
+:root[data-theme="dark"] body {
+  background-color: var(--flexoki-dark-bg);
+  color: var(--flexoki-dark-tx);
+}
+
+/* Links e Destaques */
+a {
+  color: var(--flexoki-light-tx);
+}
+
+a:hover,
+a:focus {
+  color: var(--flexoki-light-cyan);
+}
+
+:root[data-theme="dark"] a {
+  color: var(--flexoki-dark-tx);
+}
+
+/* Ajuste da cor de seleção */
+::selection {
+  background: rgba(36, 131, 123, 0.2);
+  color: inherit;
+}
+
+::-moz-selection {
+  background: rgba(36, 131, 123, 0.2);
+  color: inherit;
+}
+
+/* Scrollbar para combinar com o tema */
+::-webkit-scrollbar-thumb {
+  background: var(--flexoki-light-ui-2);
+  border-radius: 6px;
+}
+
+:root[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--flexoki-dark-ui-2);
+}
+
+/* Cores de sintaxe básicas */
+/* Light Mode Syntax */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .chroma .k,
+  :root:not([data-theme="dark"]) .chroma .kd,
+  :root:not([data-theme="dark"]) .chroma .kp,
+  :root:not([data-theme="dark"]) .chroma .kr {
+    color: #a02f6f;
+  } /* Magenta (Keywords) */
+
+  :root:not([data-theme="dark"]) .chroma .s,
+  :root:not([data-theme="dark"]) .chroma .s1,
+  :root:not([data-theme="dark"]) .chroma .s2 {
+    color: #24837b;
+  } /* Cyan (Strings) */
+
+  :root:not([data-theme="dark"]) .chroma .c,
+  :root:not([data-theme="dark"]) .chroma .ch,
+  :root:not([data-theme="dark"]) .chroma .cm,
+  :root:not([data-theme="dark"]) .chroma .c1 {
+    color: #b7b5ac;
+  } /* Base 300 (Comments) */
+
+  :root:not([data-theme="dark"]) .chroma .nf {
+    color: #205ea6;
+  } /* Blue (Functions) */
+  :root:not([data-theme="dark"]) .chroma .nv {
+    color: #bc5215;
+  } /* Orange (Variables) */
+  :root:not([data-theme="dark"]) .chroma .m,
+  :root:not([data-theme="dark"]) .chroma .mb,
+  :root:not([data-theme="dark"]) .chroma .mi {
+    color: #5e409d;
+  } /* Purple (Numbers) */
+}
+
+/* Dark Mode Syntax */
+:root[data-theme="dark"] .chroma .k,
+:root[data-theme="dark"] .chroma .kd,
+:root[data-theme="dark"] .chroma .kp,
+:root[data-theme="dark"] .chroma .kr {
+  color: #ce5d97;
+} /* Magenta (Keywords) */
+
+:root[data-theme="dark"] .chroma .s,
+:root[data-theme="dark"] .chroma .s1,
+:root[data-theme="dark"] .chroma .s2 {
+  color: #3aa99f;
+} /* Cyan (Strings) */
+
+:root[data-theme="dark"] .chroma .c,
+:root[data-theme="dark"] .chroma .ch,
+:root[data-theme="dark"] .chroma .cm,
+:root[data-theme="dark"] .chroma .c1 {
+  color: #575653;
+} /* Base 700 (Comments) */
+
+:root[data-theme="dark"] .chroma .nf {
+  color: #4385be;
+} /* Blue (Functions) */
+:root[data-theme="dark"] .chroma .nv {
+  color: #da702c;
+} /* Orange (Variables) */
+:root[data-theme="dark"] .chroma .m,
+:root[data-theme="dark"] .chroma .mb,
+:root[data-theme="dark"] .chroma .mi {
+  color: #8b7ec8;
+} /* Purple (Numbers) */
