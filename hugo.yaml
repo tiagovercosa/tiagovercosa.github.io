@@ -11,18 +11,15 @@ buildDrafts: false
 buildFuture: false
 
 params:
+  navbar:
+    displayTitle: true
 
-  homeInfoParams:
-    title: Tiago Lima
-    content: |
-      **Bem-vindo ao meu blog.** Este é um espaço pensado para compartilhar
-      reflexões sobre Física e Matemática, anotações de leituras, experiências com
-      programação, software livre e tudo mais que me desperte interesse.
-      
-      Logo abaixo você encontra alguns links para me acompanhar em outros espaços da web.
-      Fique à vontade. Será um prazer ter você por aqui.
+  footer:
+    displaySocialIcons: true
+    displayCopyright: true
+    displayPoweredBy: true
 
-  socialIcons:
+  social:
     - name: github
       url: "https://github.com/tiagovercosa"
     - name: mastodon
@@ -41,19 +38,20 @@ params:
   conver:
     linkFullImages: true
 
-  paginacao: 6
   dateFormat: "02 Jan 2006"
   enableRss: true
 
-  showReadingTime: true
-  showLastUpdated: true
-  ShowBreadCrumbs: true
-  ShowPostNavLinks: true
+  breadcrumbs: true
+  page:
+    showReadingTime: true
+    showLastUpdated: true
+    showNavigation: true
 
-  pagination:
-    disableAliases: true
-    pagerSize: 5
-    path: page
+paginate: 6
+pagination:
+  disableAliases: true
+  pagerSize: 6
+  path: page
 
 menu:
   main:
