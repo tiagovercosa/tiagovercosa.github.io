@@ -1,3 +1,4 @@
 .DS_Storepublic/
 .DS_Store
 public/
+_vendor/
