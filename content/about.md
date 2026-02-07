@@ -1,12 +1,10 @@
-+++
-title = "Sobre Mim"
-date = 2025-12-14
-draft = false
-hidemeta = true
-searchHidden = true
-+++
-
-👋🏼 Olá!
+---
+title: 'Sobre Mim'
+date: 2025-12-14
+draft: false
+hidemeta: true
+searchHidden: true
+---
 
 Sou Tiago, graduado em Física e mestre em Física Aplicada pela Universidade Federal Rural de Pernambuco ([UFRPE](https://portal.ufrpe.br)). Atualmente, sou doutorando em Física na Universidade de Brasília ([UnB](https://www.unb.br/)), Brasil. Minha pesquisa é focada em dinâmica molecular (MD) e teoria do funcional da densidade (DFT), áreas aplicadas ao estudo de nanomateriais.
 
