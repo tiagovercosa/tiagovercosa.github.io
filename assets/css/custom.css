@@ -1,0 +1,145 @@
+/* Base (Flexoki) */
+:root {
+    --fx-paper: #FFFCF0;
+    --fx-50:  #F2F0E5;
+    --fx-100: #E6E4D9;
+    --fx-150: #DAD8CE;
+    --fx-200: #CECDC3;
+    --fx-300: #B7B5AC;
+    --fx-500: #878580;
+    --fx-600: #6F6E69;
+    --fx-700: #575653;
+    --fx-800: #403E3C;
+    --fx-850: #343331;
+    --fx-900: #282726;
+    --fx-950: #1C1B1A;
+    --fx-black: #100F0F;
+
+  /* === recomendado p/ tema claro === */
+    --fx-red-600: #AF3029;
+    --fx-orange-600: #BC5215;
+    --fx-yellow-600: #AD8301;
+    --fx-green-600: #66800B;
+    --fx-cyan-600: #24837B;
+    --fx-blue-600: #205EA6;
+    --fx-purple-600: #5E409D;
+    --fx-magenta-600: #A02F6F;
+
+  /* === recomendado p/ tema escuro === */
+    --fx-red-400: #D14D41;
+    --fx-orange-400: #DA702C;
+    --fx-yellow-400: #D0A215;
+    --fx-green-400: #879A39;
+    --fx-cyan-400: #3AA99F;
+    --fx-blue-400: #4385BE;
+    --fx-purple-400: #8B7EC8;
+    --fx-magenta-400: #CE5D97;
+
+  /* === Mapeamento semântico (light) === */
+    --fx-bg:   var(--fx-paper);
+    --fx-bg2:  var(--fx-50);
+    --fx-ui:   var(--fx-100);
+    --fx-ui2:  var(--fx-150);
+    --fx-ui3:  var(--fx-200);
+
+    --fx-tx:   var(--fx-black);
+    --fx-tx2:  var(--fx-600);
+    --fx-tx3:  var(--fx-300);
+
+    --fx-accent: var(--fx-cyan-600);
+    --fx-border: var(--fx-200);
+
+    --primary-hue: 210deg;
+    --primary-saturation: 40%;
+    --primary-lightness: 50%;
+}
+
+/* Dark mode */
+html[class~="dark"] {
+  --fx-bg:   var(--fx-black);
+  --fx-bg2:  var(--fx-950);
+  --fx-ui:   var(--fx-900);
+  --fx-ui2:  var(--fx-850);
+  --fx-ui3:  var(--fx-800);
+
+  --fx-tx:   var(--fx-200);
+  --fx-tx2:  var(--fx-500);
+  --fx-tx3:  var(--fx-700);
+
+  --fx-accent: var(--fx-cyan-400);
+  --fx-border: var(--fx-850);
+}
+
+.content {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  background: var(--fx-bg);
+  color: var(--fx-tx);
+  font-size: 17px;
+}
+
+.content code:not(.code-block code) {
+  color: var(--fx-300);
+}
+
+/* Links */
+a {
+  color: var(--fx-accent);
+}
+a:hover {
+  filter: brightness(0.95);
+}
+
+/* Navbar / Sidebar / Footer (classes expostas pelo Hextra) */
+/* .hextra-nav-container,
+.hextra-sidebar-container,
+.hextra-footer {
+    background: var(--fx-bg);
+    border-color: var(--fx-border);
+} */
+
+/* .hextra-sidebar-active-item {
+    background: var(--fx-ui);
+    border-color: var(--fx-border);
+    color: var(--fx-tx);
+} */
+
+/* Áreas “elevadas” */
+/* .hextra-nav-container-blur,
+.hextra-card,
+.hextra-tabs-panel,
+.hextra-filetree {
+  background: var(--fx-bg2);
+  border-color: var(--fx-border);
+} */
+
+/* Texto “muted” típico do tema */
+/* .content :where(p, li, small) {
+  color: color-mix(in srgb, var(--fx-tx) 90%, var(--fx-bg));
+} */
+/* .content :where(blockquote) {
+  color: var(--fx-tx2);
+  border-color: var(--fx-border);
+} */
+
+/* Código inline e blocos */
+/* .content code:not(.code-block code) {
+  background: var(--fx-ui);
+  color: var(--fx-tx);
+  border: 1px solid var(--fx-border);
+  border-radius: 0.4rem;
+  padding: 0.1rem 0.3rem;
+} */
+
+/* pre, .code-block, .hextra-code-block {
+  background: var(--fx-ui);
+  color: var(--fx-tx);
+  border-color: var(--fx-border);
+} */
+
+/* Separadores/bordas comuns */
+/* hr {
+  border-color: var(--fx-border);
+} */
