@@ -38,7 +38,7 @@ params:
 
   defaultTheme: auto
 
-  conver:
+  cover:
     linkFullImages: true
 
   paginacao: 6
