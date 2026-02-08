@@ -29,13 +29,13 @@
                         {{ (index .Pages 0).Date.Format "2006 - January" }}
                     </h3>
                     
-                    <ul class="hx:mt-3 hx:space-y-2">
+                    <ul class="hx:mt-3 hx:space-y-4">
                         {{- range .Pages.ByDate.Reverse -}}
                         <li class="hx:flex hx:items-baseline hx:gap-4">
                             <time class="hx:mt-1 hx:opacity-50 hx:text-sm hx:text-slate-500 hx:dark:text-slate-400 hx:whitespace-nowrap">
                                 {{ .Date.Format "02 Jan" }}
                             </time>
-                            <a class="hx:text-lg hx:text-slate-900 hx:dark:text-slate-100" href="{{ .RelPermalink }}">
+                            <a class="hx:text-xl hx:text-slate-900 hx:dark:text-slate-100" href="{{ .RelPermalink }}">
                                 {{ .Title }}
                             </a>
                         </li>
