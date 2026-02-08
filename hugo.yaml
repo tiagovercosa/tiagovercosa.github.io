@@ -50,11 +50,6 @@ menu:
       weight: 2
       params:
         type: link
-    - name: Arquivo
-      pageRef: /archive
-      weight: 3
-      params:
-        type: link
     - name: Sobre
       pageRef: /about
       weight: 4
