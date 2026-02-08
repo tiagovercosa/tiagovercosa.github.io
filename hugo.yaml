@@ -50,11 +50,16 @@ menu:
       weight: 2
       params:
         type: link
+    - name: Arquivo
+      pageRef: /archive
+      weight: 3
+      params:
+        type: link
     - name: Sobre
       pageRef: /about
-      weight: 3
-    - name: Pesquisa
       weight: 4
+    - name: Pesquisa
+      weight: 5
       params:
         type: search
     - name: Theme Toggle
@@ -66,11 +71,7 @@ params:
 
   navbar:
     displayTitle: true
-    displayLogo: true
-    logo:
-      path: images/logo.svg
-      dark: images/logo-dark.svg
-    width: wide
+    displayLogo: false
 
   theme:
     default: system
@@ -85,6 +86,12 @@ params:
   displayUpdatedDate: false
   dateFormat: "02 Jan 2006"
   displayReadingTime: true
+
+  author:
+    name: Tiago Lima
+    email: contato@tiagolima.me
+  
+  description: "Blog do Tiago Lima falando sobre física, matemática, tecnologia, computação e coisas geek."
 
   search:
     enable: true
