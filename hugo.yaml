@@ -6,10 +6,6 @@ copyright: "2024–2026 Tiago Lima · [CC BY-NC-SA 4.0](https://creativecommons.
 enableRobotsTXT: true
 enableGitInfo: true
 
-# services:
-#   googleAnalytics:
-#     ID: G-MEASUREMENT_ID
-
 outputs:
   home: [html, llms]
   page: [html]
@@ -124,6 +120,12 @@ params:
 
   imageZoom:
     enable: true
+
+  analytics:
+    umami:
+      serverURL: "https://cloud.umami.is"
+      websiteID: "9cb2875c-d10b-4078-b29d-ed2fb9e12ca9"
+      scriptName: "script.js"
 
   comments:
     enable: false
