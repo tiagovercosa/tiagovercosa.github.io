@@ -1,3 +1,38 @@
+.content {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.archive-link {
+  text-decoration: none;
+  transition: color 150ms ease, text-decoration-color 150ms ease;
+  text-underline-offset: 4px;
+}
+
+.archive-link:hover {
+  color: hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
+  text-decoration: underline;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  margin: 0 0.6rem;
+  display: inline-block;
+}
+
+.social-links a svg {
+  width: 22px;
+  height: 22px;
+  transition: opacity 0.2s ease;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+}
+
 /* Base (Flexoki) */
 :root {
     --fx-paper: #FFFCF0;

@@ -6,10 +6,6 @@ copyright: "2024–2026 Tiago Lima · [CC BY-NC-SA 4.0](https://creativecommons.
 enableRobotsTXT: true
 enableGitInfo: true
 
-# services:
-#   googleAnalytics:
-#     ID: G-MEASUREMENT_ID
-
 outputs:
   home: [html, llms]
   page: [html]
@@ -52,9 +48,9 @@ menu:
         type: link
     - name: Sobre
       pageRef: /about
-      weight: 3
-    - name: Pesquisa
       weight: 4
+    - name: Pesquisa
+      weight: 5
       params:
         type: search
     - name: Theme Toggle
@@ -66,11 +62,7 @@ params:
 
   navbar:
     displayTitle: true
-    displayLogo: true
-    logo:
-      path: images/logo.svg
-      dark: images/logo-dark.svg
-    width: wide
+    displayLogo: false
 
   theme:
     default: system
@@ -85,6 +77,12 @@ params:
   displayUpdatedDate: false
   dateFormat: "02 Jan 2006"
   displayReadingTime: true
+
+  author:
+    name: Tiago Lima
+    email: contato@tiagolima.me
+  
+  description: "Blog do Tiago Lima falando sobre física, matemática, tecnologia, computação e coisas geek."
 
   search:
     enable: true
@@ -122,6 +120,12 @@ params:
 
   imageZoom:
     enable: true
+
+  analytics:
+    umami:
+      serverURL: "https://cloud.umami.is"
+      websiteID: "9cb2875c-d10b-4078-b29d-ed2fb9e12ca9"
+      scriptName: "script.js"
 
   comments:
     enable: false
