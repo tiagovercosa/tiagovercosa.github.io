@@ -1,0 +1,15 @@
+{{- $posts := where .Site.RegularPages "Section" "blog" -}}
+{{- $posts = where $posts "Params.draft" "ne" true -}}
+        
+{{- range ($posts.ByDate.Reverse.GroupByDate "2006") }}
+
+{{- range (.Pages.ByDate.Reverse.GroupByDate "2006-01") }}
+## {{ (index .Pages 0).Date.Format "2006-January" }}
+
+{{- range .Pages.ByDate.Reverse }}
+- <time class="hx:opacity-50 hx:text-sm hx:text-slate-500 hx:dark:text-slate-400 hx:whitespace-nowrap">{{ .Date.Format "02 Jan" }}</time> - [{{ .Title }}]({{ .RelPermalink }})
+{{- end }}
+
+{{- end }}
+
+{{- end }}

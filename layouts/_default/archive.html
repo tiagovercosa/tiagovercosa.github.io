@@ -14,38 +14,9 @@
                 {{ .Title }}
             </h1>
         {{ end }}
-
-        {{- $posts := where .Site.RegularPages "Section" "blog" -}}
-        {{- $posts = where $posts "Params.draft" "ne" true -}}
-
-        {{- range ($posts.ByDate.Reverse.GroupByDate "2006") -}}
-            <section class="hx:mt-12">
-                <h2 class="hx:text-4xl hx:font-semibold hx:text-slate-800 hx:dark:text-slate-200">
-                    {{ .Key }}
-                </h2>
-
-                {{- range (.Pages.ByDate.Reverse.GroupByDate "2006-01") -}}
-                    <h3 class="hx:mt-6 hx:text-2xl hx:font-semibold hx:text-slate-700 hx:dark:text-slate-300">
-                        {{ (index .Pages 0).Date.Format "2006 - January" }}
-                    </h3>
-                    
-                    <ul class="hx:mt-3 hx:space-y-4">
-                        {{- range .Pages.ByDate.Reverse -}}
-                        <li class="hx:flex hx:items-baseline hx:gap-4">
-                            <time class="hx:mt-1 hx:opacity-50 hx:text-sm hx:text-slate-500 hx:dark:text-slate-400 hx:whitespace-nowrap">
-                                {{ .Date.Format "02 Jan" }}
-                            </time>
-                            <a class="archive-link hx:text-lg hx:text-slate-900 hx:dark:text-slate-100" href="{{ .RelPermalink }}">
-                                {{ .Title }}
-                            </a>
-                        </li>
-                        {{- end -}}
-                    </ul>
-                {{- end -}}
-            </section>
-        {{- end -}}
+        <div class="content">{{ .Content }}</div>
       </main>
     </article>
-    <div class="hx:max-xl:hidden hx:h-0 hx:w-64 hx:shrink-0"></div>
+    {{ partial "toc.html" . }}
   </div>
 {{- end -}}
