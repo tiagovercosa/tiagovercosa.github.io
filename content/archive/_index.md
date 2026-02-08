@@ -5,3 +5,5 @@ menu:
   main:
     weight: 3
 ---
+
+{{% feature-archive %}}
