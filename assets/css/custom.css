@@ -1,0 +1,10 @@
+.archive-link {
+  text-decoration: none;
+  transition: color 150ms ease, text-decoration-color 150ms ease;
+  text-underline-offset: 4px;
+}
+
+.archive-link:hover {
+  color: hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
+  text-decoration: underline;
+}
