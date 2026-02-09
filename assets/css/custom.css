@@ -8,8 +8,8 @@
 }
 
 .social-links a svg {
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   transition: opacity 0.2s ease;
 }
 
@@ -17,6 +17,15 @@
   color: #205EA6;
   text-decoration: none;
 }
+
+.content a:is(html[class~="dark"] *) {
+  color: #4385BE;
+}
+
 .content a:hover {
-  opacity: 0.7;
+  opacity: 0.85;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: opacity 0.2s ease, text-decoration-color 0.2s ease;
 }

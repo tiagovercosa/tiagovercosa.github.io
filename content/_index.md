@@ -31,14 +31,17 @@ autoconhecimento, filosofia, tecnologias, programação, vida digital e outros
 assuntos que me interessam. O objetivo é compartilhar ideias, reflexões e
 experiências de forma acessível e envolvente.
 
+Se quiser me conhecer um pouco mais, visite a [página sobre](/about/), onde compartilho um pouco da minha trajetória e interesses.
+
 Logo abaixo você encontra alguns links para entrar em contato por e-mail ou pelas
 minhas poucas redes sociais. Por favor, fique à vontade para entrar em contato.
 
-É um prazer ter você por aqui.
+Fico feliz com a sua presença!
 
 <div class="social-links">
-  <a href="https://github.com/tiagovercosa" aria-label="GitHub">{{< icon "github" >}} Github</a> ·
-  <a href="https://mastodon.social/@vercosa" rel="me" aria-label="Mastodon">{{< icon "mastodon" >}} Mastodon</a> ·
-  <a href="https://bsky.app/profile/tiagolima.me" aria-label="Bluesky">{{< icon "bluesky" >}} Bluesky</a> ·
-  <a href="mailto:contato@tiagolima.me" aria-label="Email">{{< icon "mail" >}} Email</a>
+  <a href="https://github.com/tiagovercosa" target="_blank" rel="noopener noreferrer" aria-label="GitHub">{{< icon "github" >}} Github</a> ·
+  <a href="https://mastodon.social/@vercosa" target="_blank" rel="noopener noreferrer me" aria-label="Mastodon">{{< icon "mastodon" >}} Mastodon</a> ·
+  <a href="https://bsky.app/profile/tiagolima.me" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">{{< icon "bluesky" >}} Bluesky</a> ·
+  <a href="https://micro.blog/vercosa" target="_blank" rel="noopener noreferrer" aria-label="Micro.blog">{{< icon "microblog" >}} Micro.blog</a> ·
+  <a href="mailto:contato@tiagolima.me" target="_blank" rel="noopener noreferrer" aria-label="Email">{{< icon "mail-open" >}} Email</a>
 </div>
