@@ -1,6 +1,16 @@
 .content {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin-inline: auto;
 }
+
+main {
+  line-height: 1.7;
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+}
+
 
 .social-links {
   text-align: center;
