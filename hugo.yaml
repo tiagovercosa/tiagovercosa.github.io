@@ -3,6 +3,11 @@ languageCode: pt-br
 title: "Tiago Lima"
 copyright: "2024–2026 Tiago Lima · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
 
+languages:
+  pt-br:
+    languageName: "Portugues"
+    weight: 1
+
 enableRobotsTXT: true
 enableGitInfo: true
 
@@ -75,7 +80,7 @@ params:
     width: normal
 
   displayUpdatedDate: false
-  dateFormat: "02 January 2006"
+  dateFormat: "02 de January de 2006"
   displayReadingTime: true
 
   author:
