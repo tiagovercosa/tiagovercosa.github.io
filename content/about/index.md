@@ -3,7 +3,7 @@ title: Sobre
 toc: false
 ---
 
-Sou Tiago, graduado em Física e mestre em Física Aplicada pela Universidade Federal Rural de Pernambuco ([UFRPE](https://portal.ufrpe.br)). Atualmente, sou doutorando em Física na Universidade de Brasília ([UnB](https://www.unb.br/)), Brasil. Minha pesquisa é focada em dinâmica molecular (MD) e teoria do funcional da densidade (DFT), áreas aplicadas ao estudo de nanomateriais.
+Sou Tiago, graduado em Física e mestre em Física Aplicada pela Universidade Federal Rural de Pernambuco ([UFRPE](https://ufrpe.br)). Atualmente, sou doutorando em Física na Universidade de Brasília ([UnB](https://www.unb.br/)), Brasil. Minha pesquisa é focada em dinâmica molecular (MD) e teoria do funcional da densidade (DFT), áreas aplicadas ao estudo de nanomateriais.
 
 Sou membro do Laboratório de Computação em Ciência de Materiais ([LCCMat](https://lccmat.unb.br/)), uma infraestrutura de computação de alto desempenho dedicada à simulação e caracterização de nanomateriais e biomateriais.
 
