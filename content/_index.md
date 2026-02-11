@@ -41,7 +41,7 @@ Fico feliz com a sua presença!
 <div class="social-links">
   <a href="https://github.com/tiagovercosa" target="_blank" rel="noopener noreferrer" aria-label="GitHub">{{< icon "github" >}} Github</a> ·
   <a href="https://mastodon.social/@vercosa" target="_blank" rel="noopener noreferrer me" aria-label="Mastodon">{{< icon "mastodon" >}} Mastodon</a> ·
-  <a href="https://bsky.app/profile/tiagolima.me" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">{{< icon "bluesky" >}} Bluesky</a> ·
+  <a href="https://bsky.app/profile/vercosa.org" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">{{< icon "bluesky" >}} Bluesky</a> ·
   <a href="https://micro.blog/vercosa" target="_blank" rel="noopener noreferrer" aria-label="Micro.blog">{{< icon "microblog" >}} Micro.blog</a> ·
   <a href="mailto:contato@tiagolima.me" target="_blank" rel="noopener noreferrer" aria-label="Email">{{< icon "mail-open" >}} Email</a>
 </div>

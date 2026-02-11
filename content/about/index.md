@@ -8,7 +8,7 @@ Sou Tiago, graduado em Física e mestre em Física Aplicada pela Universidade Fe
 Sou membro do Laboratório de Computação em Ciência de Materiais ([LCCMat](https://lccmat.unb.br/)), uma infraestrutura de computação de alto desempenho dedicada à simulação e caracterização de nanomateriais e biomateriais.
 
 Recentemente, venho diminuindo gradativamente minhas atividades em redes sociais tradicionais, optando a calmaria dos blogs, onde consigo ler conteúdos que realmente agregam, e alguns posts curtos no [Mastodon](https://mastodon.social/@vercosa) ou 
-[Bluesky](https://bsky.app/profile/tiagolima.me).
+[Bluesky](https://bsky.app/profile/vercosa.org).
 
 Sou entusiasta de sistemas de gestão do conhecimento, como o conceito de “Segundo Cérebro”, e busco organizar e gerenciar meu dia-a-dia usando [Obsidian](https://obsidian.md), com foco no aumento da produtividade em pesquisa.
 
