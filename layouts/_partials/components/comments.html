@@ -44,6 +44,37 @@
            .replace(/'/g, "&#039;");
     }
 
+    // Função de renderização unificada para o estilo minimalista
+    const renderCommentHTML = (account, content, date, depth) => {
+        const div = document.createElement('div');
+        div.className = "hx:p-4 hx:rounded-r-lg hx:rounded-l-none hx:bg-gray-50 dark:hx:bg-neutral-900/50 hx:mb-2";
+        
+        if (depth > 0) {
+            const indentSize = Math.min(depth, 5) * 1.2; 
+            div.style.marginLeft = `${indentSize}rem`;
+            div.style.borderLeft = "2px solid #d1d5db"; // Linha clara
+            if (document.documentElement.classList.contains('dark')) {
+                div.style.borderLeft = "2px solid #333333"; // Linha escura
+            }
+        } else {
+            div.classList.add('hx:rounded-l-lg');
+        }
+
+        div.innerHTML = `
+          <div class="hx:flex hx:items-center hx:gap-2 hx:mb-2">
+            <img src="${escapeHtml(account.avatar)}" class="hx:w-8 hx:h-8 hx:rounded-full" style="width: 32px !important; height: 32px !important; min-width: 32px;" loading="lazy">
+            <a href="${account.url}" target="_blank" class="hx:font-medium hx:text-sm hx:hover:underline">
+              ${escapeHtml(account.displayName || account.username)}
+            </a>
+            <span class="hx:text-xs hx:text-gray-500">${new Date(date).toLocaleDateString()}</span>
+          </div>
+          <div class="hx:text-sm prose dark:prose-invert max-w-none">
+            ${content}
+          </div>
+        `;
+        return div;
+    };
+
     const loadComments = async () => {
       const loading = document.getElementById('comments-loading');
 
@@ -69,45 +100,26 @@
               replyMap[parentId].push(reply);
           });
 
-          const renderCommentTree = (parentId, depth) => {
+          const renderMastodonTree = (parentId, depth) => {
               const replies = replyMap[parentId] || [];
               replies.forEach(reply => {
                   if(reply.visibility !== 'public') return;
-
-                  const div = document.createElement('div');
-                  // hx:rounded-r-lg mantém o arredondamento na direita, hx:rounded-l-none retira da esquerda para a linha ser reta
-                  div.className = "hx:p-4 hx:rounded-r-lg hx:rounded-l-none hx:bg-gray-50 dark:hx:bg-neutral-900/50 hx:mb-2";
                   
-                  if (depth > 0) {
-                      const indentSize = Math.min(depth, 5) * 1.2; 
-                      div.style.marginLeft = `${indentSize}rem`;
-                      // Linha minimalista de 2px
-                      div.style.borderLeft = "2px solid #d1d5db"; 
-                      if (document.documentElement.classList.contains('dark')) {
-                          div.style.borderLeft = "2px solid #333333";
-                      }
-                  } else {
-                      // Comentário principal mantém arredondamento normal
-                      div.classList.add('hx:rounded-l-lg');
-                  }
-
-                  div.innerHTML = `
-                    <div class="hx:flex hx:items-center hx:gap-2 hx:mb-2">
-                      <img src="${escapeHtml(reply.account.avatar)}" class="hx:w-8 hx:h-8 hx:rounded-full" style="width: 32px !important; height: 32px !important; min-width: 32px;" loading="lazy">
-                      <a href="${reply.account.url}" target="_blank" class="hx:font-medium hx:text-sm hx:hover:underline">
-                        ${escapeHtml(reply.account.display_name || reply.account.username)}
-                      </a>
-                      <span class="hx:text-xs hx:text-gray-500">${new Date(reply.created_at).toLocaleDateString()}</span>
-                    </div>
-                    <div class="hx:text-sm prose dark:prose-invert max-w-none">
-                      ${reply.content}
-                    </div>
-                  `;
-                  container.appendChild(div);
-                  renderCommentTree(reply.id, depth + 1);
+                  // Adaptação dos dados do Mastodon para o renderizador padrão
+                  const accountData = {
+                      avatar: reply.account.avatar,
+                      url: reply.account.url,
+                      displayName: reply.account.display_name,
+                      username: reply.account.username
+                  };
+                  
+                  const element = renderCommentHTML(accountData, reply.content, reply.created_at, depth);
+                  container.appendChild(element);
+                  
+                  renderMastodonTree(reply.id, depth + 1);
               });
           };
-          renderCommentTree(id, 0);
+          renderMastodonTree(id, 0);
         } else {
           section.style.display = 'block';
           container.innerHTML = '<p class="hx:text-sm hx:italic hx:text-gray-500">Sem comentários ainda.</p>';
@@ -115,7 +127,7 @@
       } catch (e) { console.warn(e); }
       {{ end }}
 
-      // --- BLUESKY ---
+      // --- BLUESKY (Agora com Recursividade e Profundidade) ---
       {{ if .Params.bluesky_id }}
       try {
         const did = "{{ site.Params.social_comments.bluesky.did }}";
@@ -123,8 +135,9 @@
         const container = document.getElementById('bluesky-replies');
         const section = document.getElementById('bluesky-comments');
         
+        // CORREÇÃO: Aumentamos o depth para 10 para pegar respostas das respostas
         const atUri = `at://${did}/app.bsky.feed.post/${postId}`;
-        const apiUrl = `https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=${encodeURIComponent(atUri)}&depth=1`;
+        const apiUrl = `https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=${encodeURIComponent(atUri)}&depth=10`;
 
         const response = await fetch(apiUrl);
         const data = await response.json();
@@ -132,24 +145,47 @@
         if (data.thread && data.thread.replies && data.thread.replies.length > 0) {
           section.style.display = 'block';
           container.innerHTML = ''; 
-          data.thread.replies.forEach(reply => {
-              if(!reply.post) return;
-              const author = reply.post.author;
-              const record = reply.post.record;
-              const div = document.createElement('div');
-              div.className = "hx:p-4 hx:rounded-lg hx:bg-gray-50 dark:hx:bg-neutral-900/50 hx:mb-3";
-              div.innerHTML = `
-                <div class="hx:flex hx:items-center hx:gap-2 hx:mb-2">
-                  <img src="${escapeHtml(author.avatar)}" class="hx:w-8 hx:h-8 hx:rounded-full" style="width: 32px !important; height: 32px !important; min-width: 32px;" loading="lazy">
-                  <a href="https://bsky.app/profile/${author.handle}" target="_blank" class="hx:font-medium hx:text-sm hx:hover:underline">
-                    ${escapeHtml(author.displayName || author.handle)}
-                  </a>
-                  <span class="hx:text-xs hx:text-gray-500">${new Date(record.createdAt).toLocaleDateString()}</span>
-                </div>
-                <div class="hx:text-sm prose dark:prose-invert max-w-none"><p>${escapeHtml(record.text)}</p></div>
-              `;
-              container.appendChild(div);
-          });
+
+          // Ordenar comentários de topo por likes
+          const topLevelReplies = data.thread.replies.sort((a, b) => (b.post.likeCount || 0) - (a.post.likeCount || 0));
+
+          // Função recursiva para percorrer a árvore do Bluesky
+          const renderBlueskyTree = (replies, depth) => {
+              if (!replies) return;
+
+              replies.forEach(thread => {
+                  if(!thread.post) return;
+                  const author = thread.post.author;
+                  const record = thread.post.record;
+
+                  // Prepara dados para o renderizador
+                  const accountData = {
+                      avatar: author.avatar,
+                      url: `https://bsky.app/profile/${author.handle}`,
+                      displayName: author.displayName,
+                      username: author.handle
+                  };
+                  
+                  // O texto no Bluesky vem plano, envolvemos em <p> para manter padrão visual
+                  const contentHTML = `<p>${escapeHtml(record.text)}</p>`;
+
+                  const element = renderCommentHTML(accountData, contentHTML, record.createdAt, depth);
+                  container.appendChild(element);
+
+                  // Se houver respostas dentro desta resposta, chamamos a função novamente (cascata)
+                  if (thread.replies) {
+                      // Opcional: ordenar as respostas filhas por data (antigas primeiro) ou likes
+                      const sortedReplies = thread.replies.sort((a, b) => new Date(a.post.record.createdAt) - new Date(b.post.record.createdAt));
+                      renderBlueskyTree(sortedReplies, depth + 1);
+                  }
+              });
+          }
+
+          renderBlueskyTree(topLevelReplies, 0);
+
+        } else {
+          section.style.display = 'block';
+          container.innerHTML = '<p class="hx:text-sm hx:italic hx:text-gray-500">Sem comentários ainda.</p>';
         }
       } catch (e) { console.warn(e); }
       {{ end }}
