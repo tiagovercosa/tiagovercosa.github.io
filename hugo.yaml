@@ -132,6 +132,13 @@ params:
       websiteID: "9cb2875c-d10b-4078-b29d-ed2fb9e12ca9"
       scriptName: "script.js"
 
+  social_comments:
+    mastodon:
+      host: "mastodon.social"
+      username: "vercosa"
+    bluesky:
+      did: "did:plc:zcpwqpscnk5ktxoiejcezwuo"
+            
   comments:
-    enable: false
-    type: giscus
+    enable: true
+      
