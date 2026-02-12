@@ -1,6 +1,9 @@
 ---
 title: "Um terceiro post de teste"
 date: "2026-01-24T12:58:00-03:00"
+comments: true
+mastodon_id: "116049121013560317"
+bluesky_id: "3mcpizkror62h"
 draft: false
 tags: [markdown, syntax]
 categories: [tech]
