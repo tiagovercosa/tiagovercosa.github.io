@@ -62,3 +62,5 @@ O procedimento no Bluesky é equivalente. Depois de publicar o post, acesse a pu
 Como mencionado no início deste post, o processo para habilitar comentários nas publicações exigiu um tempo considerável de experimentação e certo domínio técnico, além de algum tipo de ajudinha de ferramentas de IA.
 
 Com a configuração concluída, as postagens deixam de parecer conteúdos isolados em um espaço estático e passam a integrar um ambiente efetivamente interativo, no qual há possibilidade real de diálogo e retorno por parte dos leitores. Colocando por terra aquela sensação de que tinha um conteúdo em um limbo inacessível.
+
+<meta name="fediverse:creator" content="@vercosa@mastodon.social">
