@@ -43,19 +43,19 @@ Seu texto...
 
 Com esses dados devidamente inseridos, o post passa a ser integrado aos conteúdos correspondentes nas duas principais redes sociais descentralizadas: Mastodon e Bluesky.
 
-![](./comments_1.png)
+![](./comments_1.webp)
 
 ### Mastodon
 
 Após publicar o post no Mastodon, acesse a publicação e copie sua URL. Normalmente, ela terá um formato semelhante a `https://mastodon.social/@usuario/1118923456789`. O identificador do post corresponde à sequência numérica localizada ao final da URL.
 
-![](./comments_2.png)
+![](./comments_2.webp)
 
 ### Bluesky
 
 O procedimento no Bluesky é equivalente. Depois de publicar o post, acesse a publicação e copie sua URL, que geralmente segue o formato `https://bsky.app/profile/usuario.bsky.social/post/3ksc5mn4opq2`. Nesse caso, o identificador do post é o código alfanumérico presente ao final da URL.
 
-![](./comments_3.png)
+![](./comments_3.webp)
 
 ## Postagens conectadas
 
