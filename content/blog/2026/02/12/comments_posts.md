@@ -4,7 +4,7 @@ date: "2026-02-12T20:58:00-03:00"
 description: "A implementação de um sistema de comentários no blog foi motivada pela necessidade de interação entre leitores e textos, utilizando uma abordagem de client-side fetching para integrar comentários de redes sociais descentralizadas."
 comments: true
 mastodon_id: "116060463380431556"
-bluesky_id: "3mepaghaw3f2p"
+bluesky_id: "3mepdqfdt6k27"
 draft: false
 tags: [fediverso, mastodon, bluesky, blogging, internet, vida digital]
 categories: [blog]
