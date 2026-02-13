@@ -3,8 +3,8 @@ title: "O caminho de volta ao blog"
 date: "2026-01-25T22:25:00-03:00"
 description: "Um relato da transição das redes sociais para a blogosfera como uma busca por um ambiente online mais tranquilo e autêntico."
 comments: true
-mastodon_id: "116049121013560317"
-bluesky_id: "3mcpizkror62h"
+mastodon_id: "115958791204428256"
+bluesky_id: "3mdc3leomtb2p"
 draft: false
 tags: [fediverso, blogging, internet, vida digital]
 categories: [blog]
