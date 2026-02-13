@@ -10,7 +10,7 @@ tags: [fediverso, blogging, internet, vida digital]
 categories: [blog]
 ---
 
-![Escritório nostálgico](./old-pc.png)
+![Escritório nostálgico](./old-pc.webp)
 
 O primeiro _long-post_ no blog não poderia ser diferente: precisava contar o que me fez sair das redes sociais e me aventurar na criação deste blog. O desejo de criar um blog não é recente e remete ao início dos anos 2000. Não vou escrever neste post toda essa história, até porque ficaria enfadonho, mas, em publicações futuras, pretendo contar um pouco de como surgiu a minha vontade de criar um blog.
 
