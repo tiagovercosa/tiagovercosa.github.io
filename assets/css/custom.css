@@ -1,20 +1,53 @@
-.content {
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  margin-inline: auto;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  --primary-hue: 212deg;
+  --primary-saturation: 68%;
+  --primary-lightness: 39%;
+}
+
+html[class~="dark"] {
+  --primary-hue: 208deg;
+  --primary-saturation: 50%;
+  --primary-lightness: 45%;
 }
 
 main {
+  font-family: 'Merriweather', 'Georgia', serif;
+  background: transparent;
   line-height: 1.7;
-  font-size: 18px;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
+  hyphens: auto;
 }
 
+@layer theme {
+  :root {
+    --hx-default-mono-font-family: 'Iosevka', 'JetBrains Mono', monospace;
+  }
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+.content a,
+.hextra-footer a {
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness)) !important;
+  text-decoration: none;
+}
+.content a:hover,
+.hextra-footer a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 .social-links {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .social-links a svg {
@@ -23,19 +56,6 @@ main {
   transition: opacity 0.2s ease;
 }
 
-.content a {
-  color: #205EA6;
-  text-decoration: none;
-}
-
-.content a:is(html[class~="dark"] *) {
-  color: #4385BE;
-}
-
-.content a:hover {
-  opacity: 0.85;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1px;
-  transition: opacity 0.2s ease, text-decoration-color 0.2s ease;
+.hextra-code-block {
+  font-size: 1.1em;
 }
