@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
 :root {
   --color-tx: #100F0F;
 
@@ -18,10 +16,10 @@ html[class~="dark"] {
 
 body {
   color: var(--color-tx);
+  font-family: 'Merriweather', 'Georgia', serif;
 }
 
 main {
-  font-family: 'Merriweather', 'Georgia', serif;
   background: transparent;
   line-height: 1.7;
   text-rendering: optimizeLegibility;
