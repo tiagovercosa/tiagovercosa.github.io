@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 :root {
+  --color-tx: #100F0F;
+
   --primary-hue: 212deg;
   --primary-saturation: 68%;
   --primary-lightness: 39%;
 }
 
 html[class~="dark"] {
+  --color-tx: #CECDC3;
+
   --primary-hue: 208deg;
   --primary-saturation: 50%;
   --primary-lightness: 45%;
+}
+
+body {
+  color: var(--color-tx);
 }
 
 main {
@@ -28,9 +36,14 @@ main {
 }
 
 .content {
+  color: var(--color-tx);
   font-size: 16px;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-tx) !important;
 }
 
 .content a,
