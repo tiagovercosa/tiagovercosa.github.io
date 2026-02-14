@@ -64,13 +64,18 @@ menu:
 
 params:
   externalLinkDecoration: true
+  
+  favicon:
+    icon: favicon.svg
 
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
+    logo:
+      path: image/hexa_logo.png
 
   theme:
-    default: system
+    default: light
     displayToggle: true
 
   footer:
