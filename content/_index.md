@@ -3,7 +3,7 @@ description: "Ciência, Tecnologia, Reflexões, leituras e autoconhecimento."
 ---
 
 {{< hextra/hero-headline >}}
-  <span style="font-family: serif; font-style: italic;">
+  <span style="font-family: 'Merriweather', serif; font-style: italic;">
     Tiago Lima
   </span>
 {{< /hextra/hero-headline >}}
