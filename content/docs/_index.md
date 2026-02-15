@@ -1,5 +1,5 @@
 ---
-title: My Docs
+title: Jardim Digital
 cascade:
   type: docs
 ---
