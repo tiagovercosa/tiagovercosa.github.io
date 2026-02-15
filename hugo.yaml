@@ -1,12 +1,15 @@
-baseURL: https://tiagovercosa.github.io/
-languageCode: pt-br
+baseURL: https://vercosa.org/
 title: "Tiago Lima"
-copyright: "2024–2026 Tiago Lima · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+
+defaultContentLanguage: pt-br
 
 languages:
   pt-br:
-    languageName: "Portugues"
+    languageName: "Pt-Br"
     weight: 1
+  en:
+    languageName: "En"
+    weight: 2
 
 enableRobotsTXT: true
 enableGitInfo: true
@@ -41,28 +44,43 @@ enableInlineShortcodes: true
 
 menu:
   main:
-    - name: Jardim Digital
+    - identifier: jardim_digital
+      name: Jardim Digital
       pageRef: /docs
       weight: 2
       params:
         type: link
-    - name: Blog
+    - identifier: blog
+      name: Blog
       pageRef: /blog
       weight: 3
       params:
         type: link
-    - name: Publicações
+    - identifier: publicacoes
+      name: Publicações
       pageRef: /publications
       weight: 4
       params:
         type: link
-    - name: Pesquisa
+    - identifier: archive
+      name: Arquivo
+      pageRef: /archive
+      weight: 5
+      params:
+        type: link
+    - identifier: search
+      name: Pesquisa
       weight: 6
       params:
         type: search
     - name: Theme Toggle
       params:
         type: theme-toggle
+    - name: Language Switcher
+      params:
+        type: language-switch
+        label: true
+        icon: "globe-alt"
 
 params:
   externalLinkDecoration: true
