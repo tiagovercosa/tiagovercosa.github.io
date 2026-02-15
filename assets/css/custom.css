@@ -55,11 +55,6 @@ h1, h2, h3, h4, h5, h6 {
   text-underline-offset: 3px;
 }
 
-.social-links {
-  text-align: center;
-  margin-top: 3rem;
-}
-
 .social-links a svg {
   width: 21px;
   height: 21px;
