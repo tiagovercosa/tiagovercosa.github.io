@@ -51,8 +51,13 @@ menu:
       weight: 3
       params:
         type: link
+    - name: Publicações
+      pageRef: /publications
+      weight: 4
+      params:
+        type: link
     - name: Pesquisa
-      weight: 5
+      weight: 6
       params:
         type: search
     - name: Theme Toggle

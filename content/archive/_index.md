@@ -3,7 +3,7 @@ title: "Arquivo"
 layout: "archive"
 menu:
   main:
-    weight: 4
+    weight: 5
 ---
 
 {{% feature-archive %}}
