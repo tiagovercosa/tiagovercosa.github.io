@@ -2,7 +2,7 @@
 description: "Ciência, Tecnologia, Reflexões, leituras e autoconhecimento."
 ---
 
-<div class="hx:mt-12 hx:mb-8 hx:text-4xl hx:font-bold hx:text-center">
+<div class="section-title">
 Sobre mim
 </div>
 
