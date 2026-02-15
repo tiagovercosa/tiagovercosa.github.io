@@ -1,7 +1,7 @@
 ---
 title: "Meu Primeiro Post"
 date: "2025-12-14T22:48:39-03:00"
-draft: false
+draft: true
 description: "Artigo de exemplo que demonstra a sintaxe básica do código e a formatação de elementos HTML."
 tags: [markdown, syntax, code, gist]
 categories: [themes, syntax]
