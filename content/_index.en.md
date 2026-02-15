@@ -6,7 +6,7 @@ description: "Science, Technology, Reflections, Readings and Self-Knowledge."
 About me
 </div>
 
-I am a graduate student at the Institute of Physics of the University of Brasília, where I am pursuing a PhD in Condensed Matter Physics under the supervision of Luiz Ribeiro. I completed my undergraduate and master’s degrees at the Department of Physics of the Federal Rural University of Pernambuco, where I obtained a Bachelor’s degree in Physics Education and a Master’s degree in Applied Physics.
+I am a graduate student at the Institute of Physics of the University of Brasília, where I am pursuing a PhD in Condensed Matter Physics under the supervision of Luiz Ribeiro. I completed my undergraduate and master’s degrees at the Department of Physics of the Federal Rural University of Pernambuco, where I obtained a Bachelor’s degree in Physics and a Master’s degree in Applied Physics.
 
 As a member of the Materials Science Computing Laboratory — a high-performance computing infrastructure dedicated to simulations and characterizations of nanomaterials and biomaterials — my main interest is focused on the design and analysis of neoteric liquids (ionic liquids) as electrolytes for supercapacitors, employing molecular dynamics (MD) and density functional theory (DFT), applied to the study of nanomaterials. In this context, the central objective is to investigate how the layering effect and the atomic arrangement at the surface influence the properties of supercapacitors.
 
