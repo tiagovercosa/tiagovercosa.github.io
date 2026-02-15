@@ -6,17 +6,17 @@ description: "Science, Technology, Reflections, Readings and Self-Knowledge."
 About me
 </div>
 
-Sou estudante de pós-graduação no Instituto de Física da Universidade de Brasília, onde curso doutorado em Física da Matéria Condensada, sob a orientação de Luiz Ribeiro. Minha graduação e mestrado foi no Departamento de Física, Universidade Federal Rural de Pernambuco, onde obtive os títulos de Licenciado em Física e Mestre em Física Aplicada.
+I am a graduate student at the Institute of Physics of the University of Brasília, where I am pursuing a PhD in Condensed Matter Physics under the supervision of Luiz Ribeiro. I completed my undergraduate and master’s degrees at the Department of Physics of the Federal Rural University of Pernambuco, where I obtained a Bachelor’s degree in Physics and a Master’s degree in Applied Physics.
 
-Como membro do laboratório de Computação em Ciência de Materiais — uma infraestrutura de computação de alto desempenho dedicada a simulações e caracterizações de nanomateriais e biomateriais —, meu principal interesse concentra-se no projeto e na análise de líquidos neotéricos (líquidos iônicos) como eletrólitos para supercapacitores, empregando dinâmica molecular (MD) e teoria do funcional da densidade (DFT), aplicadas ao estudo de nanomateriais. Nesse contexto, o objetivo central consiste em investigar como o efeito de camadas e o arranjo atômico na superfície influenciam as propriedades dos supercapacitores.
+As a member of the Materials Science Computing Laboratory — a high-performance computing infrastructure dedicated to simulations and characterizations of nanomaterials and biomaterials — my main interest is focused on the design and analysis of neoteric liquids (ionic liquids) as electrolytes for supercapacitors, employing molecular dynamics (MD) and density functional theory (DFT), applied to the study of nanomaterials. In this context, the central objective is to investigate how the layering effect and the atomic arrangement at the surface influence the properties of supercapacitors.
 
-Meu [jardim digital](/docs/) é um projeto online — desenvolvido no Obsidian — que funciona como um repositório público para meus pensamentos e estudos nas áreas de física, matemática, ciência da computação e filosofia, com ênfase particular em teoria quântica e métodos matemáticos computacionais.
+My [digital garden](/docs/) is an online project — developed in Obsidian — that functions as a public repository for my thoughts and studies in the areas of physics, mathematics, computer science, and philosophy, with particular emphasis on quantum theory and computational mathematical methods.
 
-Recentemente, venho reduzindo gradativamente minhas atividades em redes sociais tradicionais e optando pela calmaria dos blogs, onde consigo ler conteúdos que realmente agregam. Também [escrevo alguns posts](/blog/) sobre os mais variados temas, com o objetivo de compartilhar ideias, reflexões e experiências. Além disso, publico textos curtos no [Mastodon](https://mastodon.social/@vercosa) e no [Bluesky](https://bsky.app/profile/vercosa.org).
+Recently, I have been gradually reducing my activity on traditional social networks and opting for the calmness of blogs, where I can read content that truly adds value. I also [write some posts](/blog/) on a wide range of topics, with the aim of sharing ideas, reflections, and experiences. In addition, I publish short texts on [Mastodon](https://mastodon.social/@vercosa) and [Bluesky](https://bsky.app/profile/vercosa.org).
 
-Todos os textos e imagens criados para as postagens neste blog pessoal estão licenciados sob a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). Os trechos de código presentes neste site podem ser utilizados sob a [Licença MIT](http://opensource.org/licenses/MIT), ou seja, sinta-se à vontade para utilizá-los, mas não espere que eu garanta sua correção ou ofereça suporte.
+All texts and images created for the posts on this personal blog are licensed under the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). The code snippets available on this site may be used under the [MIT License](http://opensource.org/licenses/MIT), that is, feel free to use them, but do not expect me to guarantee their correctness or provide support.
 
-Fico feliz com a sua presença!
+I am glad to have you here!
 
 <div class="social-links hx:mt-12 hx:mb-4 hx:text-center">
   <a href="https://github.com/tiagovercosa" target="_blank" rel="noopener noreferrer" aria-label="GitHub">{{< icon "github" >}} Github</a> ·
