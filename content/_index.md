@@ -2,43 +2,23 @@
 description: "Ciência, Tecnologia, Reflexões, leituras e autoconhecimento."
 ---
 
-{{< hextra/hero-headline >}}
-  <span style="font-family: 'Merriweather', serif; font-style: italic;">
-    Tiago Lima
-  </span>
-{{< /hextra/hero-headline >}}
+<div class="hx:mt-12 hx:mb-8 hx:text-4xl hx:font-bold">
+Sobre mim
+</div>
 
-{{< hextra/hero-subtitle >}}
-  Ciência, Reflexões, Autoconhecimento, Tecnologia.
-{{< /hextra/hero-subtitle >}}
+Sou estudante de pós-graduação no Instituto de Física da Universidade de Brasília, onde curso doutorado em Física da Matéria Condensada, sob a orientação de Luiz Ribeiro. Minha graduação e mestrado foi no Departamento de Física, Universidade Federal Rural de Pernambuco, onde obtive os títulos de Licenciado em Física e Mestre em Física Aplicada.
 
----
+Como membro do laboratório de Computação em Ciência de Materiais — uma infraestrutura de computação de alto desempenho dedicada a simulações e caracterizações de nanomateriais e biomateriais —, meu principal interesse concentra-se no projeto e na análise de líquidos neotéricos (líquidos iônicos) como eletrólitos para supercapacitores, empregando dinâmica molecular (MD) e teoria do funcional da densidade (DFT), aplicadas ao estudo de nanomateriais. Nesse contexto, o objetivo central consiste em investigar como o efeito de camadas e o arranjo atômico na superfície influenciam as propriedades dos supercapacitores.
 
-**Seja bem-vindo ao meu blog!**
+Meu [jardim digital](/docs/) é um projeto online — desenvolvido no Obsidian — que funciona como um repositório público para meus pensamentos e estudos nas áreas de física, matemática, ciência da computação e filosofia, com ênfase particular em teoria quântica e métodos matemáticos computacionais.
 
-Este é um espaço dedicado a compartilhar reflexões, autoconhecimento, ciência,
-leituras, experiências com programação, software livre e outros temas que despertam
-meu interesse.
+Recentemente, venho reduzindo gradativamente minhas atividades em redes sociais tradicionais e optando pela calmaria dos blogs, onde consigo ler conteúdos que realmente agregam. Também [escrevo alguns posts](/blog/) sobre os mais variados temas, com o objetivo de compartilhar ideias, reflexões e experiências. Além disso, publico textos curtos no [Mastodon](https://mastodon.social/@vercosa) e no [Bluesky](https://bsky.app/profile/vercosa.org).
 
-Sempre tive vontade de contribuir para que mais pessoas compreendam a natureza
-por meio da ciência de forma acessível e significativa. Este espaço tem uma
-[seção dedicada](/docs/) a compartilhar conhecimentos em física, matemática e
-outras áreas da ciência, buscando explicar como a natureza funciona e discutir a
-lógica que governa seus fenômenos.
-
-Também escrevo alguns [posts no blog](/blog/) sobre os mais variados temas, como
-autoconhecimento, filosofia, tecnologias, programação, vida digital e outros
-assuntos que me interessam. O objetivo é compartilhar ideias, reflexões e
-experiências de forma acessível e envolvente.
-
-Se quiser me conhecer um pouco mais, visite a [página sobre](/about/), onde compartilho um pouco da minha trajetória e interesses.
-
-Logo abaixo você encontra alguns links para entrar em contato por e-mail ou pelas
-minhas poucas redes sociais. Por favor, fique à vontade para entrar em contato.
+Todos os textos e imagens criados para as postagens neste blog pessoal estão licenciados sob a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). Os trechos de código presentes neste site podem ser utilizados sob a [Licença MIT](http://opensource.org/licenses/MIT), ou seja, sinta-se à vontade para utilizá-los, mas não espere que eu garanta sua correção ou ofereça suporte.
 
 Fico feliz com a sua presença!
 
-<div class="social-links">
+<div class="social-links hx:mt-12 hx:mb-4 hx:text-center">
   <a href="https://github.com/tiagovercosa" target="_blank" rel="noopener noreferrer" aria-label="GitHub">{{< icon "github" >}} Github</a> ·
   <a href="https://mastodon.social/@vercosa" target="_blank" rel="noopener noreferrer me" aria-label="Mastodon">{{< icon "mastodon" >}} Mastodon</a> ·
   <a href="https://bsky.app/profile/vercosa.org" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">{{< icon "bluesky" >}} Bluesky</a> ·

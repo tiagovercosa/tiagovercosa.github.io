@@ -41,19 +41,16 @@ enableInlineShortcodes: true
 
 menu:
   main:
-    - name: Documentação
+    - name: Jardim Digital
       pageRef: /docs
-      weight: 1
+      weight: 2
       params:
         type: link
     - name: Blog
       pageRef: /blog
-      weight: 2
+      weight: 3
       params:
         type: link
-    - name: Sobre
-      pageRef: /about
-      weight: 4
     - name: Pesquisa
       weight: 5
       params:
