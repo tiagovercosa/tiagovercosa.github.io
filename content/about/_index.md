@@ -23,5 +23,5 @@ Sinta-se à vontade para interagir ou acompanhar minhas atualizações:
   ·
   <a href="https://bsky.app/profile/vercosa.org" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">{{< icon "bluesky" >}} Bluesky</a>  
   ·
-  <a href="mailto:contato@tiagolima.me" target="_blank" rel="noopener noreferrer" aria-label="Email">{{< icon "mail-open" >}} Email</a>
+  <a href="mailto:contato@tiagolima.me" target="_blank" rel="noopener noreferrer" aria-label="Email">{{< icon "mail-open" >}} E-mail</a>
 </div>
