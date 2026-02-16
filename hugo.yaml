@@ -44,6 +44,12 @@ enableInlineShortcodes: true
 
 menu:
   main:
+    - identifier: about
+      name: Sobre
+      pageRef: /about
+      weight: 1
+      params:
+        type: link
     - identifier: jardim_digital
       name: Jardim Digital
       pageRef: /docs
@@ -86,13 +92,13 @@ params:
   externalLinkDecoration: true
   
   favicon:
-    icon: favicon.svg
+    icon: logo.svg
 
   navbar:
     displayTitle: true
     displayLogo: true
     logo:
-      path: image/hexa_logo.png
+      path: image/logo.png
 
   theme:
     default: light
