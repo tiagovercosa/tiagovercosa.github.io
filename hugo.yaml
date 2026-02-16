@@ -92,7 +92,7 @@ params:
   externalLinkDecoration: true
   
   favicon:
-    icon: logo.svg
+    icon: favicon.svg
 
   navbar:
     displayTitle: true
