@@ -1,6 +1,6 @@
 ---
 title: "Arquivo"
-layout: "archive"
+layout: "single"
 ---
 
 {{% feature-archive %}}

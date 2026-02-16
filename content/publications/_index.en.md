@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-layout: "archive"
+layout: "single"
 ---
 
 ## Conductance Peak Density in Nanowires
