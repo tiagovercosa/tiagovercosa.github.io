@@ -11,7 +11,7 @@ Este é o meu pequeno espaço na internet, um lugar para escrever em público, u
 Faço questão de compartilhar alguns blogs que leio com frequência, gosto de acompanhar e, vez ou outra, comentar. Sempre acreditei que blogs existem em diálogo, e não isolados. Talvez você se interesse por algum deles também.
 
 - [Steph Ango](https://stephango.com/) - também conhecido como kepano, atualmente o CEO de [Obsidian](https://obsidian.md/).
-- [VladCampos](https://vladcampos.com/) - um Consultor de Fluxo de Trabalho e Criador de Conteúdo obcecado por simplificar processos e movido pelo aprendizado e por transmiti-lo adiante.
+- [VladCampos](https://vladcampos.com/) - um Consultor de Fluxo de Trabalho e Criador de Conteúdo.
 - [Manton Reece](https://manton.org/) -  criador do micro.blog e escreve sobre o seu dia a dia.
 
 ### Vamos conversar?
