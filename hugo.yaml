@@ -89,6 +89,8 @@ menu:
         icon: "globe-alt"
 
 params:
+  description: "Blog do Tiago Lima falando sobre física, matemática, tecnologia, computação e coisas geek."
+  images: ["image/logo.png"]
   externalLinkDecoration: true
   
   favicon:
@@ -118,7 +120,6 @@ params:
     name: Tiago Lima
     email: contato@tiagolima.me
   
-  description: "Blog do Tiago Lima falando sobre física, matemática, tecnologia, computação e coisas geek."
 
   search:
     enable: true
