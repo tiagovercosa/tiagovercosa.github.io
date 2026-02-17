@@ -1,6 +1,10 @@
 ---
 title: "Seu próprio espaço no meio do ruído da internet"
 date: "2026-02-08T14:51:00-03:00"
+authors:
+  - name: tiagovercosa
+    link: https://github.com/tiagovercosa
+    image: https://github.com/tiagovercosa.png
 description: "Incentivar a criação de blogs pessoais é uma forma de promover interações mais autênticas na internet, aliviando os efeitos dos algoritmos das grandes plataformas digitais."
 comments: true
 mastodon_id: "116036288188953843"

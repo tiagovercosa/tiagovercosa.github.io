@@ -1,6 +1,10 @@
 ---
 title: "O caminho de volta ao blog"
 date: "2026-01-25T22:25:00-03:00"
+authors:
+  - name: tiagovercosa
+    link: https://github.com/tiagovercosa
+    image: https://github.com/tiagovercosa.png
 description: "Um relato da transição das redes sociais para a blogosfera como uma busca por um ambiente online mais tranquilo e autêntico."
 comments: true
 mastodon_id: "115958791204428256"

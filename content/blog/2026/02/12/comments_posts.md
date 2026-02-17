@@ -1,6 +1,10 @@
 ---
 title: "Tirando o blog do isolamento: integrando comentários via redes descentralizadas"
 date: "2026-02-12T20:58:00-03:00"
+authors:
+  - name: tiagovercosa
+    link: https://github.com/tiagovercosa
+    image: https://github.com/tiagovercosa.png
 description: "A implementação de um sistema de comentários no blog foi motivada pela necessidade de interação entre leitores e textos, utilizando uma abordagem de client-side fetching para integrar comentários de redes sociais descentralizadas."
 comments: true
 mastodon_id: "116060796731699903"

@@ -1,6 +1,10 @@
 ---
 title: 'Privacidade: quem realmente se importa?'
 date: '2026-02-16T22:30:04-03:00'
+authors:
+  - name: tiagovercosa
+    link: https://github.com/tiagovercosa
+    image: https://github.com/tiagovercosa.png
 description: 'O crescente desprezo da população pela privacidade online é evidenciado pelo uso contínuo de plataformas como o WhatsApp, mesmo com preocupações sobre a segurança dos dados pessoais.'
 comments: true
 mastodon_id: "116083445938676657"
