@@ -5,7 +5,7 @@ description: 'O crescente desprezo da população pela privacidade online é evi
 comments: true
 mastodon_id: ""
 bluesky_id: ""
-draft: true
+draft: false
 tags: [AI, Privacidade, Vida Digital, Internet, Segurança]
 categories: [blog]
 ---
