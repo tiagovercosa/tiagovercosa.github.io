@@ -6,6 +6,7 @@ authors:
     link: https://github.com/tiagovercosa
     image: https://github.com/tiagovercosa.png
 description: "Um relato da transição das redes sociais para a blogosfera como uma busca por um ambiente online mais tranquilo e autêntico."
+images: ["old-pc.webp"]
 comments: true
 mastodon_id: "115958791204428256"
 bluesky_id: "3mdc3leomtb2p"
