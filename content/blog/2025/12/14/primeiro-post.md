@@ -1,21 +1,18 @@
 ---
 title: "Meu Primeiro Post"
 date: "2025-12-14T22:48:39-03:00"
-draft: true
-description: "Artigo de exemplo que demonstra a sintaxe básica do código e a formatação de elementos HTML."
-tags: [markdown, syntax, code, gist]
-categories: [themes, syntax]
+authors:
+  - name: tiagovercosa
+    link: https://github.com/tiagovercosa
+    image: https://github.com/tiagovercosa.png
+draft: false
+description: ""
+tags: [micropost]
+categories: [blog]
 ---
 
-Aqui é um exemplo simples de um posta em português `import`. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Esse é o meu primeiro post no blog! Estou muito animado para compartilhar minhas ideias e pensamentos. Faz tempo que queria criar um "cantinho" nessa imensa internet para poder falar de diversos assuntos, longe do fervilhão de informações que são as redes sociais de hoje.
 
-```python
-import numpy as np
+O blog, junto com o site, está em plena evolução e espero que ele se torne um espaço aberto para discussões, aprendizados e compartilhamento de conhecimento.
 
-def sum(a, b):
-    return a + b
-```
-
-## Segundo titulo 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+PS.: *Esse post estava como rascunho e só agora (16/02/2026) decidi publicá-lo!* 😅
