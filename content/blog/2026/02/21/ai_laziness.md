@@ -7,11 +7,11 @@ authors:
     image: https://github.com/tiagovercosa.png
 description: 'A dependência da inteligência artificial pode comprometer o pensamento crítico, mas seu uso intencional pode potencializar o aprendizado e o crescimento intelectual.'
 comments: true
-mastodon_id: ""
-bluesky_id: ""
+mastodon_id: "116109591574149169"
+bluesky_id: "3mff2lgiiis2i"
 draft: false
 tags: [ai, blogging, internet]
-categories: []
+categories: [AI]
 ---
 
 Todos nós já estamos completamente envolvidos pela IA, desde as tarefas mais simples até as mais complexas. Eu, por exemplo, utilizo o Gemini e a Perplexity AI de várias maneiras no meu dia a dia, cada um com a sua especificidade e finalidade. No entanto, o medo constante de me achar cada vez mais dependente intelectualmente dessas ferramentas me assusta.
