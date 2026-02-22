@@ -7,9 +7,9 @@ languages:
   pt-br:
     languageName: "Pt-Br"
     weight: 1
-  en:
-    languageName: "En"
-    weight: 2
+  # en:
+  #   languageName: "En"
+  #   weight: 2
 
 enableRobotsTXT: true
 enableGitInfo: true
