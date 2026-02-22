@@ -7,17 +7,14 @@ languages:
   pt-br:
     languageName: "Pt-Br"
     weight: 1
-  # en:
-  #   languageName: "En"
-  #   weight: 2
 
 enableRobotsTXT: true
 enableGitInfo: true
 
 outputs:
   home: [html, llms]
-  page: [html]
-  section: [html, rss]
+  page: [html, markdown]
+  section: [html, rss, markdown]
 
 module:
   hugoVersion:
