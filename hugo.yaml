@@ -67,7 +67,7 @@ menu:
         type: link
     - identifier: archive
       name: Arquivo
-      pageRef: /archive
+      pageRef: /archives
       weight: 5
       params:
         type: link
