@@ -6,7 +6,7 @@ description: "Ciência, Tecnologia, Reflexões, leituras e autoconhecimento."
 Sobre mim
 </div>
 
-Sou estudante de pós-graduação no Instituto de Física da Universidade de Brasília, onde curso doutorado em Física da Matéria Condensada, sob a orientação de Luiz Ribeiro. Minha graduação e mestrado foi no Departamento de Física, Universidade Federal Rural de Pernambuco, onde obtive os títulos de Licenciado em Física e Mestre em Física Aplicada.
+Sou estudante de pós-graduação no Instituto de Física da Universidade de Brasília, onde curso doutorado em Física da Matéria Condensada, sob a orientação de Luiz Ribeiro. Minha graduação e mestrado foram no Departamento de Física, Universidade Federal Rural de Pernambuco, onde obtive os títulos de Licenciado em Física e Mestre em Física Aplicada.
 
 Como membro do laboratório de Computação em Ciência de Materiais — uma infraestrutura de computação de alto desempenho dedicada a simulações e caracterizações de nanomateriais e biomateriais —, meu principal interesse concentra-se no projeto e na análise de líquidos neotéricos (líquidos iônicos) como eletrólitos para supercapacitores, empregando dinâmica molecular (MD) e teoria do funcional da densidade (DFT), aplicadas ao estudo de nanomateriais. Nesse contexto, o objetivo central consiste em investigar como o efeito de camadas e o arranjo atômico na superfície influenciam as propriedades dos supercapacitores.
 
